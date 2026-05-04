@@ -43,6 +43,7 @@ const Header = ({ forceTransparent = false }: HeaderProps) => {
     { label: "Features", href: "/#features" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
+    { label: "Privacy Policy", href: "/privacy-policy" },
   ];
 
   return (
