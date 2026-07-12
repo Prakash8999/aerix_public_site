@@ -83,7 +83,6 @@ const productData = [
     motor: "1200W",
     speed: "45 km/h",
     colors: ["Grey", "White", "Black", "Peacock Blue", "Black"],
-    controller: "38A 15TUBE",
     wheels: "12 Inch",
     headlights: "LED Headlight",
     meter: "Color Digital Instrument",
@@ -95,7 +94,7 @@ const productData = [
       Black:
         "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_range_black_large.png",
     },
-    price: "1,00,000",
+    price: "125,000",
   },
   {
     id: "5",
