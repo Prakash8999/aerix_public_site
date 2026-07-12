@@ -13,7 +13,7 @@ const nextConfig = {
     },
     images: {
         domains: ['localhost', 'pub-81175f420062419ca38eb19499a88ee5.r2.dev'],
-        unoptimized: false,
+        unoptimized: true,
     },
     // Experimental features
     experimental: {
