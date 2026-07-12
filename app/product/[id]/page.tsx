@@ -80,7 +80,6 @@ const productData = [
   {
     id: "4",
     name: "AERIX RANGER",
-    motor: "1200W",
     speed: "45 km/h",
     colors: ["Grey", "White", "Black", "Peacock Blue", "Black"],
     wheels: "12 Inch",
@@ -227,7 +226,6 @@ export default function ProductDetailPage() {
   const slidesSource = availableColors.length > 0 ? availableColors : [];
 
   const featureList = [
-    { value: product?.motor, label: "Powerful Motor" },
     { value: "Digital", label: "LED Dashboard" },
     { value: product?.speed, label: "Top Speed" },
     { value: product?.wheels, label: "Premium Wheels" },
@@ -719,7 +717,7 @@ export default function ProductDetailPage() {
                   Powerful Motor
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  {product.motor} motor delivers exceptional acceleration and
+                  BLDC Motor delivers exceptional acceleration and
                   smooth performance for city commuting and beyond.
                 </p>
               </div>

@@ -75,7 +75,7 @@ const mockModels = [
     _id: "4",
     name: "AERIX RANGER",
     tagline: "BLDC Hub Motor (IP67)",
-    price: "1,00,000",
+    price: "125,0000",
     monthlyEmi: "2,999",
     images: [
       "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_ranger_grey_large.png",
