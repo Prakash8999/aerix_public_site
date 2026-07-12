@@ -40,12 +40,12 @@ export default function ComparisonMatrix() {
     { name: "E-Velco Pro", key: "eVelcoPro" },
     { name: "Aerix Energy Loader", key: "aerixLoader" },
     { name: "Spimri", key: "spimri" },
-    { name: "Aurra Pro", key: "aurraPro" },
+    { name: "Aerix Aurra Pro", key: "aurraPro" },
     { name: "Cruiser", key: "cruiser" },
     { name: "Shravil", key: "shravil" },
     { name: "Ninja Plus+", key: "ninjaPlus" },
     { name: "GTR+", key: "gtrPlus" },
-    { name: "Ninja Mini", key: "ninjaMini" },
+    { name: "Aerix Ninja Mini", key: "ninjaMini" },
     { name: "Ninja 2G", key: "ninja2G" },
   ];
 

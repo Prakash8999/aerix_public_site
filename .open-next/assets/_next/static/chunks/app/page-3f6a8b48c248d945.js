@@ -1,1 +1,2136 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[974],{7812:(e,t,a)=>{"use strict";a.d(t,{E:()=>l});var r=a(5155);a(2115);var s=a(3101),n=a(5016);let i=(0,s.F)("inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",{variants:{variant:{default:"border-transparent bg-primary text-primary-foreground hover:bg-primary/80",secondary:"border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80",destructive:"border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80",outline:"text-foreground"}},defaultVariants:{variant:"default"}});function l(e){let{className:t,variant:a,...s}=e;return(0,r.jsx)("div",{className:(0,n.cn)(i({variant:a}),t),...s})}},9198:(e,t,a)=>{Promise.resolve().then(a.bind(a,9932))},9932:(e,t,a)=>{"use strict";a.r(t),a.d(t,{default:()=>eu});var r=a(5155),s=a(2115),n=a(1725),i=a(5239),l=a(7003),o=a(1651);let c=["https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_prime_orange_large.png","https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_glide_blue_large.png","https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_titan_white_large.png","https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_volt_black_large.png","https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_urban_grey_large.png","https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_range_black_large.png"],d={"aerix_prime_orange_large.png":"https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_prime_orange_small.png","aerix_glide_blue_large.png":"https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_glide_blue_small.png","aerix_titan_white_large.png":"https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_titan_white_small.png","aerix_volt_black_large.png":"https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_volt_black_small.png","aerix_urban_grey_large.png":"https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_urban_grey_small.png","aerix_range_black_large.png":"https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_ranger_black_small.png"},m=[{title:"Smooth Electric Performance",subtitle:"BLDC hub motor built for effortless city rides.",metric:{value:"45 km/h",label:"Top Speed"},modelName:"AERIX PRIME",color:"Orange"},{title:"Aerodynamic Design",subtitle:"Sculpted panels for stability and efficiency.",metric:{value:"Optimized",label:"Airflow Design"},modelName:"AERIX GLIDE",color:"Peacock Blue"},{title:"Smart Connectivity",subtitle:"Your scooter, connected to your world.",metric:{value:"Smart",label:"Connected Tech"},modelName:"AERIX TITAN",color:"White"},{title:"All-Weather Build",subtitle:"IP67 rated. Ready for any season.",metric:{value:"IP67",label:"Water & Dust Rating"},modelName:"AERIX VOLT",color:"Black"},{title:"Limitless Range",subtitle:"Go further with 110km true range.",metric:{value:"110 km",label:"True Range"},modelName:"AERIX URBAN",color:"Grey"},{title:"Future Ready",subtitle:"Updates over the air. Always new.",metric:{value:"3 Yr",label:"Battery Warranty"},modelName:"AERIX RANGER",color:"Black"}],u=[c[c.length-1],...c,c[0]],p=[m[m.length-1],...m,m[0]],x=(e,t,a)=>e+(t-e)*a,h=()=>{let e=(0,s.useRef)(null),t=(0,s.useRef)(null),[a,n]=(0,s.useState)(!1),[m,h]=(0,s.useState)("AERIX PRIME"),[g,b]=(0,s.useState)("Orange"),[f,v]=(0,s.useState)(0),y=(0,s.useRef)({current:0,target:0}),w=(0,s.useRef)(!1),j=(0,s.useRef)(0),N=(0,s.useRef)(),E=(0,s.useRef)(),_=(0,s.useRef)(!1),k=(0,s.useRef)(null),A=(0,s.useRef)(null);(0,s.useRef)(0);let S=(0,s.useRef)(0),[I,R]=(0,s.useState)(!1);(0,s.useEffect)(()=>{R(window.innerWidth<768);let e=()=>{R(window.innerWidth<768)};return window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[]),(0,s.useEffect)(()=>{if(!_.current){let e=window.innerWidth;y.current.current=-e,y.current.target=-e,_.current=!0}},[]);let C=(0,s.useCallback)(e=>{let t=window.innerWidth;y.current.target=-((e+1)*t)},[]),P=(0,s.useCallback)(()=>{let e=window.innerWidth,t=Math.round(y.current.target/e)*e;y.current.target=t},[]);(0,s.useEffect)(()=>{t.current&&(A.current=t.current.querySelectorAll(".hero-image"))},[]);let F=(0,s.useCallback)(()=>{let e=window.innerWidth,a=e<768;y.current.current=x(y.current.current,y.current.target,.08);let r=window.scrollY;S.current=x(S.current,r,.07);window.innerHeight;S.current,k.current&&(k.current.style.clipPath="inset(0px 0px 0px 0px)",k.current.style.transform="none");let s=y.current.current,n=c.length;if(s>=-.01){let t=-(n*e);y.current.current=t,y.current.target=t+(y.current.target-s)}else if(s<=-((n+1)*e)+.01){let t=-e;y.current.current=t,y.current.target=t+(y.current.target-s)}if(t.current){let r=y.current.current;t.current.style.transform="translate3d(".concat(r,"px, 0, 0)");let s=Math.round(Math.abs(r/e))-1;s<0&&(s=n-1),s>=n&&(s=0),s!==f&&v(s);{let s=A.current;if(!s&&t.current&&(A.current=s=t.current.querySelectorAll(".hero-image")),s){let t=Math.min(Math.max(S.current/window.innerHeight,0),1),n=Math.max(1.08,1.12-.04*t),i=25*t;s.forEach((t,s)=>{let l=s*e+r,o=l/e;if(a)t.style.transform="translateX(".concat(-(35*o),"%) translateY(").concat(i,"px) scale(").concat(n+.05,")"),t.style.objectPosition="50% 50%";else{t.style.transform="translate3d(".concat(-(.25*l),"px, ").concat(i,"px, 0) scale(").concat(n,")");let e=Math.max(15,Math.min(85,50-25*o));t.style.objectPosition="".concat(e,"% 50%")}})}}}N.current=requestAnimationFrame(F)},[f]);return(0,s.useEffect)(()=>(N.current=requestAnimationFrame(F),()=>{N.current&&cancelAnimationFrame(N.current)}),[F]),(0,s.useEffect)(()=>{let t=e.current;if(!t)return;let a=e=>{Math.abs(e.deltaX)>Math.abs(e.deltaY)&&(e.preventDefault(),y.current.target-=1.6*e.deltaX,E.current&&clearTimeout(E.current),E.current=setTimeout(()=>{P()},150))},r=e=>{w.current=!0,j.current=e,E.current&&clearTimeout(E.current),t.style.cursor="grabbing"},s=e=>{if(!w.current)return;let t=(e-j.current)*2;j.current=e,y.current.target+=t},n=()=>{w.current=!1,P(),t.style.cursor="grab"},i=e=>r(e.touches[0].clientX),l=e=>s(e.touches[0].clientX),o=()=>n(),c=e=>{e.preventDefault(),r(e.clientX)},d=e=>{e.preventDefault(),s(e.clientX)},m=()=>n(),u=()=>{w.current&&n()};return t.addEventListener("wheel",a,{passive:!1}),t.addEventListener("touchstart",i,{passive:!0}),t.addEventListener("touchmove",l,{passive:!0}),t.addEventListener("touchend",o),t.addEventListener("mousedown",c),t.addEventListener("mousemove",d),t.addEventListener("mouseup",m),t.addEventListener("mouseleave",u),()=>{t.removeEventListener("wheel",a),t.removeEventListener("touchstart",i),t.removeEventListener("touchmove",l),t.removeEventListener("touchend",o),t.removeEventListener("mousedown",c),t.removeEventListener("mousemove",d),t.removeEventListener("mouseup",m),t.removeEventListener("mouseleave",u)}},[P]),(0,r.jsx)("section",{className:"relative w-full z-0",style:{height:"200vh",marginBottom:"-100vh"},children:(0,r.jsx)("div",{className:"sticky top-0 h-screen w-full overflow-hidden",children:(0,r.jsx)("div",{ref:k,className:"absolute inset-0 will-change-transform origin-center",style:{clipPath:"inset(0% 0% 0% 0% round 0px)"},children:(0,r.jsxs)("div",{ref:e,className:"relative h-full w-full overflow-hidden bg-background select-none cursor-grab active:cursor-grabbing",children:[(0,r.jsx)("div",{ref:t,className:"flex h-full will-change-transform",style:{width:"".concat(100*u.length,"vw")},children:u.map((e,t)=>(0,r.jsxs)("div",{className:"flex-shrink-0 w-screen h-full relative overflow-hidden flex items-center justify-center border-r border-white/5 bg-[#0a0a0a]",children:[(0,r.jsxs)("div",{className:"absolute inset-0 w-full h-full overflow-hidden",children:[(0,r.jsx)(i.default,{src:I?(e=>{var t;let a=null==(t=e.split("/").pop())?void 0:t.split("?")[0];return a&&d[a]||e})(e):e,alt:p[t].title,fill:!0,className:"hero-image object-cover will-change-transform scale-105",draggable:!1,priority:t<=2,quality:90,sizes:"100vw"}),(0,r.jsx)("div",{className:"absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/20 z-10 pointer-events-none"})]}),(0,r.jsx)("div",{className:"absolute top-28 left-0 w-full px-6 sm:px-12 md:px-24 text-left z-20 transition-opacity duration-1000 ".concat(0===t&&f===c.length-1||t===u.length-1&&0===f||t===f+1?"opacity-100 delay-300":"opacity-0"),children:(0,r.jsxs)("div",{className:"max-w-xl",children:[(0,r.jsx)("h2",{className:"text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-[#F2F2F2]",children:p[t].title}),(0,r.jsx)("p",{className:"hidden md:block text-lg md:text-xl font-medium text-[#F2F2F2]/80 tracking-wide mt-3 max-w-lg",children:p[t].subtitle}),(0,r.jsxs)("div",{className:"hidden md:flex items-center gap-4 pt-8",children:[(0,r.jsx)(l.$,{size:"lg",className:"rounded-full px-8 h-12 text-base bg-[#F2F2F2] text-black hover:bg-white transition-all font-semibold shadow-none border-none",onClick:()=>{h(p[t].modelName),b(p[t].color),n(!0)},children:"Enquiry Now"}),(0,r.jsx)(l.$,{size:"lg",variant:"link",className:"px-0 text-[#F2F2F2] hover:text-white transition-all text-base h-12 decoration-transparent",onClick:()=>{let e=document.getElementById("products");e&&e.scrollIntoView({behavior:"smooth"})},children:"Explore Models →"})]})]})}),(0,r.jsx)("div",{className:"hidden md:block absolute bottom-32 right-24 z-20 text-right transition-all duration-1000 ease-out ".concat(0===t&&f===c.length-1||t===u.length-1&&0===f||t===f+1?"opacity-100 translate-y-0 delay-500":"opacity-0 translate-y-8"),children:(0,r.jsxs)("div",{className:"flex flex-col items-end",children:[(0,r.jsx)("span",{className:"text-6xl font-normal tracking-tighter text-[#F2F2F2] tabular-nums leading-none",children:p[t].metric.value}),(0,r.jsx)("span",{className:"text-sm font-medium tracking-[0.2em] text-[#F2F2F2]/60 uppercase mt-2",children:p[t].metric.label})]})}),(0,r.jsxs)("div",{className:"md:hidden absolute bottom-24 left-6 right-6 z-20 flex justify-between items-start transition-all duration-1000 ease-out ".concat(0===t&&f===c.length-1||t===u.length-1&&0===f||t===f+1?"opacity-100 translate-y-0 delay-500":"opacity-0 translate-y-8"),children:[(0,r.jsx)(l.$,{size:"sm",className:"rounded-full h-10 px-6 text-sm bg-[#F2F2F2] text-black hover:bg-white transition-all font-semibold shadow-none border-none mt-1",onClick:()=>{h(p[t].modelName),b(p[t].color),n(!0)},children:"Enquiry Now"}),(0,r.jsxs)("div",{className:"flex flex-col items-end text-right",children:[(0,r.jsx)("span",{className:"text-4xl font-normal tracking-tighter text-[#F2F2F2] tabular-nums leading-none",children:p[t].metric.value}),(0,r.jsx)("span",{className:"text-sm font-medium tracking-[0.2em] text-[#F2F2F2]/60 uppercase mt-2",children:(()=>{let e=p[t].metric.label;if("Water & Dust Rating"===e)return(0,r.jsxs)(r.Fragment,{children:["Water &",(0,r.jsx)("br",{}),"Dust Rating"]});if("Battery Warranty"===e)return(0,r.jsxs)(r.Fragment,{children:["Battery",(0,r.jsx)("br",{}),"Warranty"]});if(e.length>15){let t=e.split(" "),a=t.pop();return(0,r.jsxs)(r.Fragment,{children:[t.join(" "),(0,r.jsx)("br",{}),a]})}return e})()})]})]})]},t))}),(0,r.jsx)("div",{className:"absolute bottom-12 left-6 sm:left-12 z-20 flex gap-3",children:c.map((e,t)=>(0,r.jsx)("button",{onClick:()=>C(t),className:"h-2 rounded-full transition-all duration-500 shadow-sm ".concat(t===f?"w-8 bg-[#F2F2F2]":"w-2 bg-[#F2F2F2]/40 hover:bg-[#F2F2F2]/60"),"aria-label":"Go to slide ".concat(t+1)},t))}),(0,r.jsx)(o.A,{open:a,onOpenChange:n,preSelectedModel:m,preSelectedColor:g,isEnquiry:!0})]})})})})};var g=a(7812),b=a(4114),f=a(6154),v=a(7910),y=a(2508),w=a(9068),j=a(2320),N=a(534),E=a(63);let _=[{_id:"1",name:"Aerix Enduro",tagline:"Smart Wireless Controller (IP64)",price:"50,000",monthlyEmi:"2,399",images:["https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_enduro_grey_large.png","https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_enduro_blue_large.png","https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_enduro_white_large.png"],range:90,topSpeed:45,color:"Grey"},{_id:"5",name:"Aerix Urban",tagline:"BLDC Hub Motor (IP67)",price:"60,000",monthlyEmi:"3,199",images:["https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_urban_grey_large.png","https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_urban_white_large.png"],range:90,topSpeed:45,color:"Grey"},{_id:"2",name:"Aerix Glide",tagline:"BLDC Hub Motor (IP67)",price:"65,000",monthlyEmi:"2,599",images:["https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_glide_blue_large.png","https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_glide_grey_large.png","https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_glide_white_large.png"],range:90,topSpeed:45,color:"Peacock Blue"},{_id:"6",name:"Aerix Titan",tagline:"Smart Wireless Controller (IP64)",price:"70,000",monthlyEmi:"3,299",images:["https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_titan_white_large.png","https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_titan_gold_large.png"],range:90,topSpeed:45,color:"White"},{_id:"7",name:"Aerix Volt",tagline:"Smart Wireless Controller (IP64)",price:"85,000",monthlyEmi:"3,499",images:["https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_volt_black_large.png"],range:90,topSpeed:45,color:"Black"},{_id:"3",name:"Aerix Prime",tagline:"Smart Wireless Controller (IP64)",price:"90,000",monthlyEmi:"2,799",images:["https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_prime_orange_large.png","https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_prime_grey_large.png","https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_prime_white_large.png"],range:90,topSpeed:45,color:"Orange"},{_id:"4",name:"Aerix Ranger",tagline:"BLDC Hub Motor (IP67)",price:"100000",monthlyEmi:"2,999",images:["https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_ranger_grey_large.png","https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_ranger_white_large.png","https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_range_black_large.png"],range:90,topSpeed:45,color:"Grey"}],k=e=>{let{model:t,onEnquireClick:a}=e,n=(0,E.useRouter)(),[o,c]=(0,s.useState)(0),d=(0,s.useRef)(null),[m,u]=(0,s.useState)(!1),[p,x]=(0,s.useState)(0),[h,f]=(0,s.useState)(0),[v,y]=(0,s.useState)(!1);(0,s.useEffect)(()=>{let e=()=>{y(window.matchMedia("(max-width: 768px)").matches)};return e(),window.addEventListener("resize",e),()=>window.removeEventListener("resize",e)},[]);let w=(0,s.useRef)(null);return(0,r.jsx)(b.P.div,{ref:w,initial:{opacity:0,y:30},whileInView:{opacity:1,y:0},viewport:{once:!0},className:"group relative flex flex-col h-full",children:(0,r.jsxs)(b.P.div,{whileInView:v?"focused":void 0,initial:v?"default":void 0,variants:v?{default:{boxShadow:"0 1px 2px 0 rgb(0 0 0 / 0.05)",borderColor:"transparent"},focused:{boxShadow:"0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",borderColor:"rgba(0,0,0,0.05)",transition:{duration:.5,ease:"easeOut"}}}:{},viewport:{amount:.6,margin:"0px"},className:"relative flex flex-col h-full bg-white rounded-[2.5rem] p-3 transition-all duration-500 ease-out border shadow-sm hover:shadow-xl hover:border-black/5",children:[(0,r.jsxs)("div",{className:"relative w-full aspect-[4/3] rounded-[2rem] overflow-hidden duration-500 ease-out",children:[(0,r.jsx)("div",{className:"absolute top-5 right-5 z-10",children:(0,r.jsxs)(g.E,{variant:"secondary",className:"backdrop-blur-md bg-white/70 hover:bg-white/90 text-foreground font-medium shadow-sm rounded-full px-3 py-1 border-0",children:["₹",t.monthlyEmi,"/mo"]})}),(0,r.jsx)("div",{ref:d,className:"w-full h-full flex overflow-x-auto scrollbar-hide items-center ".concat(m?"cursor-grabbing snap-none":"cursor-grab snap-x snap-mandatory"),onScroll:()=>{d.current&&c(Math.round(d.current.scrollLeft/d.current.offsetWidth))},onMouseDown:e=>{d.current&&(u(!0),x(e.pageX-d.current.offsetLeft),f(d.current.scrollLeft))},onMouseLeave:()=>{u(!1)},onMouseUp:()=>{u(!1)},onMouseMove:e=>{if(!m||!d.current)return;e.preventDefault();let t=e.pageX-d.current.offsetLeft;d.current.scrollLeft=h-(t-p)},style:{scrollbarWidth:"none",msOverflowStyle:"none",scrollBehavior:m?"auto":"smooth"},children:t.images.map((e,a)=>(0,r.jsx)("div",{className:"min-w-full h-full flex items-center justify-center snap-center p-0 md:px-4 md:pt-4 pointer-events-none select-none relative",children:(0,r.jsx)(i.default,{src:e,alt:"".concat(t.name," view ").concat(a+1),fill:!0,className:"object-cover rounded-[1.8rem] shadow-sm transition-transform duration-700 ease-out group-hover:scale-[1.02]",draggable:!1,priority:0===a,quality:85,sizes:"(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"})},a))}),t.images.length>1&&(0,r.jsx)("div",{className:"absolute bottom-4 left-0 right-0 flex justify-center gap-1.5 z-10",children:t.images.map((e,t)=>(0,r.jsx)("button",{onClick:e=>{e.stopPropagation(),(e=>{if(d.current){let t=d.current.offsetWidth;d.current.scrollTo({left:t*e,behavior:"smooth"}),c(e)}})(t)},className:"h-1.5 rounded-full transition-all duration-300 shadow-sm ".concat(t===o?"w-6 bg-white":"w-1.5 bg-gray-300/80 hover:bg-gray-200"),"aria-label":"Go to image ".concat(t+1)},t))})]}),(0,r.jsxs)("div",{className:"flex flex-col flex-1 px-5 pt-5 pb-4",children:[(0,r.jsx)("div",{className:"",children:(0,r.jsx)("h3",{className:"text-2xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors",children:t.name})}),(0,r.jsx)("div",{className:"flex-1"}),(0,r.jsx)("div",{className:"h-px w-full bg-border/40 my-4"}),(0,r.jsxs)("div",{className:"flex items-center justify-between gap-2 md:gap-4",children:[(0,r.jsxs)("div",{className:"flex flex-col shrink-0",children:[(0,r.jsx)("p",{className:"text-[9px] md:text-[10px] uppercase tracking-wider font-semibold text-muted-foreground",children:"Starting at"}),(0,r.jsxs)("span",{className:"text-base md:text-lg font-bold text-foreground",children:["₹ ",t.price]})]}),(0,r.jsxs)("div",{className:"flex items-center gap-1.5 md:gap-2 overflow-x-auto",children:[(0,r.jsx)(l.$,{variant:"ghost",className:"h-9 md:h-10 px-2.5 md:px-4 text-xs md:text-sm font-semibold hover:bg-black/5 rounded-xl text-muted-foreground hover:text-foreground transition-colors duration-500 ease-out",onClick:()=>a(t.name.toUpperCase(),t.color),children:"Enquire"}),(0,r.jsx)(l.$,{className:"h-9 md:h-10 px-4 md:px-6 text-xs md:text-sm font-semibold shadow-md shadow-primary/20 rounded-xl",onClick:()=>n.push("/product/".concat(t._id)),children:"Explore"})]})]})]})]})})};function A(){let[e,t]=(0,s.useState)(!1),[a,n]=(0,s.useState)(""),[i,l]=(0,s.useState)(""),c=(e,a)=>{n(e),l(a||""),t(!0)};return(0,r.jsxs)("section",{id:"products",className:"pt-24 pb-8 bg-[#F8F9FA] relative z-10 text-foreground",children:[(0,r.jsxs)("div",{className:"container mx-auto px-4",children:[(0,r.jsxs)(b.P.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},viewport:{once:!0},className:"text-center mb-16 space-y-4",children:[(0,r.jsx)(g.E,{variant:"secondary",className:"px-4 py-1.5 text-sm font-medium rounded-full bg-white text-primary shadow-sm border-white/20",children:"Our Collection"}),(0,r.jsxs)("h2",{className:"text-4xl md:text-5xl font-bold tracking-tight text-foreground",children:["Designed for ",(0,r.jsx)("span",{className:"text-primary",children:"Every Journey"})]}),(0,r.jsx)("p",{className:"text-xl text-muted-foreground/80 max-w-2xl mx-auto",children:"Experience the future of mobility with our premium electric scooters. Engineered for performance, styled for you."})]}),(0,r.jsx)("div",{className:"grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-10",children:_.map(e=>(0,r.jsx)(k,{model:e,onEnquireClick:c},e._id))})]}),(0,r.jsx)(o.A,{open:e,onOpenChange:t,preSelectedModel:a,preSelectedColor:i,isEnquiry:!0})]})}f.A,v.A,y.A,w.A,j.A,N.A;var S=a(2864),I=a(598),R=a(4157);let C=[{icon:(0,r.jsx)(S.A,{className:"w-8 h-8 text-primary"}),title:"150km Range",description:"Go further with our advanced Lithium-ion battery technology designed for long commutes.",colSpan:"md:col-span-2",bgImage:"linear-gradient(to right bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.6)), url('https://images.unsplash.com/photo-1620802051782-726fa6b3308d?auto=format&fit=crop&q=80')"},{icon:(0,r.jsx)(f.A,{className:"w-8 h-8 text-secondary"}),title:"Fast Charging",description:"0 to 80% in just 40 minutes.",colSpan:"md:col-span-1",highlight:!0},{icon:(0,r.jsx)(I.A,{className:"w-8 h-8 text-primary"}),title:"85 km/h",description:"Top speed that keeps you ahead of traffic.",colSpan:"md:col-span-1"},{icon:(0,r.jsx)(y.A,{className:"w-8 h-8 text-blue-500"}),title:"Smart Connect",description:"Control your ride with our dedicated app.",colSpan:"md:col-span-2",hasGradient:!0},{icon:(0,r.jsx)(v.A,{className:"w-8 h-8 text-green-500"}),title:"Advanced Safety",description:"CBS braking system and anti-theft alarm.",colSpan:"md:col-span-1"},{icon:(0,r.jsx)(R.A,{className:"w-8 h-8 text-cyan-500"}),title:"Aerodynamic",description:"Sleek design for maximum efficiency.",colSpan:"md:col-span-2"}],P={hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.1}}},F={hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.5}}},L=()=>(0,r.jsxs)("section",{className:"section-padding relative overflow-hidden bg-gray-50/50",id:"features",children:[(0,r.jsxs)("div",{className:"absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none",children:[(0,r.jsx)("div",{className:"absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px]"}),(0,r.jsx)("div",{className:"absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[100px]"})]}),(0,r.jsxs)("div",{className:"container-custom relative z-10",children:[(0,r.jsxs)("div",{className:"text-center mb-16 max-w-2xl mx-auto",children:[(0,r.jsxs)(b.P.h2,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},viewport:{once:!0},className:"text-4xl md:text-5xl font-bold mb-6 tracking-tight text-gray-900",children:["Engineered for the ",(0,r.jsx)("span",{className:"gradient-text",children:"Future"})]}),(0,r.jsx)(b.P.p,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{delay:.2},className:"text-lg text-muted-foreground",children:"Experience the perfect blend of performance, technology, and sustainability in every ride."})]}),(0,r.jsx)(b.P.div,{variants:P,initial:"hidden",whileInView:"visible",viewport:{once:!0,margin:"-50px"},className:"grid grid-cols-1 md:grid-cols-3 gap-6",children:C.map((e,t)=>(0,r.jsxs)(b.P.div,{variants:F,whileHover:{y:-5},className:"\n                group relative p-8 rounded-3xl overflow-hidden\n                ".concat(e.colSpan,"\n                ").concat(e.highlight?"bg-white border-primary/20 shadow-md":"bg-white/60","\n                ").concat(e.hasGradient?"bg-gradient-to-br from-white to-gray-50":"","\n                border border-gray-100 hover:border-primary/20 transition-all duration-300 shadow-sm hover:shadow-lg\n              "),style:e.bgImage?{backgroundImage:e.bgImage,backgroundSize:"cover",backgroundPosition:"center"}:void 0,children:[(0,r.jsx)("div",{className:"relative z-10 flex flex-col h-full justify-between",children:(0,r.jsxs)("div",{className:"mb-6",children:[(0,r.jsx)("div",{className:"\n                    p-3 rounded-2xl w-fit mb-4\n                    ".concat(e.hasGradient||e.bgImage?"bg-white shadow-sm":"bg-secondary/10","\n                  "),children:e.icon}),(0,r.jsx)("h3",{className:"text-2xl font-bold mb-2 text-gray-900",children:e.title}),(0,r.jsx)("p",{className:"text-base leading-relaxed text-muted-foreground",children:e.description})]})}),(0,r.jsx)("div",{className:"absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"})]},t))})]})]});var M=a(8171);let T=[{year:"2026",title:"AI Assistant",points:["Voice booking","Predictive maintenance alerts","Personalized ride modes"]},{year:"2026",title:"AR Showroom",points:["View in your space","Virtual test rides","360\xb0 showroom tours"]},{year:"2027",title:"Battery Swap Network",points:["2-minute swaps","1000+ stations","Pay-per-swap plans"]}],X=()=>{let{toast:e}=(0,M.dj)();return(0,r.jsx)("section",{className:"section-padding bg-gradient-to-br from-background to-primary/5",children:(0,r.jsxs)("div",{className:"container-custom",children:[(0,r.jsxs)(b.P.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},viewport:{once:!0},className:"text-center mb-16",children:[(0,r.jsx)("h3",{className:"text-lg font-medium text-muted-foreground mb-2",children:"Future Roadmap"}),(0,r.jsxs)("h2",{className:"text-4xl md:text-5xl font-bold mb-4",children:["The Road ",(0,r.jsx)("span",{className:"gradient-text",children:"Ahead"})]}),(0,r.jsx)("p",{className:"text-lg text-muted-foreground max-w-2xl mx-auto",children:"Exciting innovations coming to transform your electric mobility experience"})]}),(0,r.jsx)("div",{className:"grid md:grid-cols-3 gap-8",children:T.map((t,a)=>(0,r.jsxs)(b.P.div,{initial:{opacity:0,y:30},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{delay:.2*a},className:"glass p-8 rounded-2xl hover:bg-card/50 transition-all group",children:[(0,r.jsx)(g.E,{variant:"secondary",className:"mb-4",children:t.year}),(0,r.jsx)("h3",{className:"text-2xl font-bold mb-6",children:t.title}),(0,r.jsx)("ul",{className:"space-y-3 mb-6",children:t.points.map((e,t)=>(0,r.jsxs)("li",{className:"flex items-start text-muted-foreground",children:[(0,r.jsx)("span",{className:"text-primary mr-2",children:"•"}),e]},t))}),(0,r.jsx)(l.$,{variant:"outline",className:"w-full",onClick:()=>{var a;return a=t.title,void e({title:"Notification Set!",description:"We'll notify you when ".concat(a," launches.")})},children:"Notify Me"})]},a))})]})})};var W=a(1873),q=a(9141),z=a(6983),O=a(4679);let V=["Mumbai","Bangalore","Chennai","Delhi NCR","Hyderabad","Kolkata","Pune","Patna","Jaipur"],B=()=>{let{toast:e}=(0,M.dj)(),[t,a]=(0,s.useState)(!1),[n,i]=(0,s.useState)(!1);return(0,s.useEffect)(()=>{let e=()=>{let e=new Date,t=new Date(e.getTime()+6e4*e.getTimezoneOffset()+198e5).getHours();i(t>=11&&t<23)};e();let t=setInterval(e,6e4);return()=>clearInterval(t)},[]),(0,r.jsx)("section",{className:"",children:(0,r.jsxs)("div",{className:"container-custom",children:[(0,r.jsxs)(b.P.div,{initial:{opacity:0,y:20},whileInView:{opacity:1,y:0},viewport:{once:!0},className:"text-center mb-12",children:[(0,r.jsx)("h2",{className:"text-3xl md:text-4xl font-bold mb-4",children:"Come on over. Meet us"}),(0,r.jsxs)("p",{className:"text-xl md:text-2xl font-semibold mb-2",children:["Select City ",(0,r.jsx)("span",{className:"gradient-text",children:"AERIX ENERGY"})," Stores."]}),(0,r.jsx)("p",{className:"text-base text-muted-foreground",children:"Because nothing beats a one on one with the S1."})]}),(0,r.jsx)("div",{className:"grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto",children:V.map((t,s)=>(0,r.jsxs)(b.P.button,{initial:{opacity:0,scale:.9},whileInView:{opacity:1,scale:1},viewport:{once:!0},transition:{delay:.1*s},onClick:()=>(t=>{if("Mumbai"===t)return void a(!0);e({title:"Coming Soon! \uD83C\uDF89",description:"We're excited to announce that our AERIX ENERGY store in ".concat(t," will be opening soon! Stay tuned for updates on our launch date and exclusive opening offers.")})})(t),className:"glass p-6 rounded-xl hover:bg-primary/10 hover:border-primary transition-all group text-center",children:[(0,r.jsx)(W.A,{className:"w-6 h-6 text-primary mx-auto mb-2 group-hover:scale-110 transition-transform"}),(0,r.jsx)("span",{className:"font-medium",children:t})]},t))}),(0,r.jsx)(b.P.p,{initial:{opacity:0},whileInView:{opacity:1},viewport:{once:!0},className:"text-center text-sm text-muted-foreground mt-8",children:"More about AERIX ENERGY Stores"}),(0,r.jsx)(O.lG,{open:t,onOpenChange:a,children:(0,r.jsxs)(O.Cf,{className:"sm:max-w-md border-primary/20 bg-background/95 backdrop-blur-xl",children:[(0,r.jsxs)(O.c7,{children:[(0,r.jsxs)(O.L3,{className:"text-2xl font-bold flex items-center gap-2",children:[(0,r.jsx)("div",{className:"p-2 rounded-full bg-primary/10",children:(0,r.jsx)(W.A,{className:"text-primary w-5 h-5"})}),(0,r.jsx)("span",{children:"Mumbai Store"})]}),(0,r.jsx)(O.rr,{className:"text-base",children:"Experience the future of riding at our Ulhasnagar center"})]}),(0,r.jsxs)("div",{className:"space-y-6 py-4",children:[(0,r.jsxs)("div",{className:"relative overflow-hidden rounded-xl border border-primary/10 bg-secondary/5 p-6 hover:bg-secondary/10 transition-colors",children:[(0,r.jsxs)("div",{className:"flex items-start gap-4 mb-6",children:[(0,r.jsx)("div",{className:"p-2 rounded-lg bg-primary/5 shrink-0",children:(0,r.jsx)(W.A,{className:"w-5 h-5 text-primary"})}),(0,r.jsxs)("div",{children:[(0,r.jsx)("h4",{className:"font-semibold text-lg mb-1",children:"Ulhasnagar Experience Center"}),(0,r.jsxs)("p",{className:"text-muted-foreground leading-relaxed",children:["Shop No 545, Main Road, O.T Section,",(0,r.jsx)("br",{}),"OPP Geeta Medical,",(0,r.jsx)("br",{}),"Ulhasnagar, Maharashtra 421004"]})]})]}),(0,r.jsxs)("div",{className:"grid grid-cols-2 gap-4 mb-6",children:[(0,r.jsxs)("div",{className:"flex items-center gap-3 p-3 rounded-lg bg-background/50 border border-border/50",children:[(0,r.jsx)(q.A,{className:"w-4 h-4 text-primary"}),(0,r.jsx)("span",{className:"text-sm font-medium",children:"+91 7770000597"})]}),(0,r.jsxs)("div",{className:"flex items-center gap-3 p-3 rounded-lg bg-background/50 border border-border/50",children:[(0,r.jsx)(z.A,{className:"w-4 h-4 text-primary"}),(0,r.jsx)("span",{className:"text-sm font-medium",children:"11:00 AM - 11:00 PM"})]})]})]}),(0,r.jsxs)("div",{className:"flex items-center justify-between px-2 text-sm text-muted-foreground",children:[(0,r.jsxs)("div",{className:"flex items-center gap-2",children:[(0,r.jsx)("div",{className:"w-2 h-2 rounded-full animate-pulse ".concat(n?"bg-green-500":"bg-red-500")}),(0,r.jsx)("span",{children:n?"Open Now":"Closed"})]}),(0,r.jsx)("span",{children:"Mon - Sun"})]})]})]})})]})})};var D=a(6083),G=a(4033),U=a(5016);let Y=D.bL,$=s.forwardRef((e,t)=>{let{className:a,...s}=e;return(0,r.jsx)(D.q7,{ref:t,className:(0,U.cn)("border-b",a),...s})});$.displayName="AccordionItem";let H=s.forwardRef((e,t)=>{let{className:a,children:s,...n}=e;return(0,r.jsx)(D.Y9,{className:"flex",children:(0,r.jsxs)(D.l9,{ref:t,className:(0,U.cn)("flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180",a),...n,children:[s,(0,r.jsx)(G.A,{className:"h-4 w-4 shrink-0 transition-transform duration-200"})]})})});H.displayName=D.l9.displayName;let J=s.forwardRef((e,t)=>{let{className:a,children:s,...n}=e;return(0,r.jsx)(D.UC,{ref:t,className:"overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",...n,children:(0,r.jsx)("div",{className:(0,U.cn)("pb-4 pt-0",a),children:s})})});J.displayName=D.UC.displayName;let K=[{question:"What is the real-world range of Aerix scooters?",answer:"Our scooters offer 110 KM real-world range on a single charge under normal riding conditions. Range may vary based on riding style, terrain, weather, and load."},{question:"How long does it take to charge the battery?",answer:"Standard charging takes 4-5 hours for a full charge. With our fast charger, you can get 80% charge in just 45 minutes."},{question:"What warranty do you offer?",answer:"We offer an industry-leading 1-year/80,000 km warranty on the battery pack and 3 years on the vehicle. Extended warranty options are also available."},{question:"Are there any government subsidies available?",answer:"Yes! Under the FAME II scheme, you can avail up to ₹15,000 subsidy. State-specific subsidies may also apply. Our team will help you with all documentation."},{question:"How do I book a test ride?",answer:"Simply click the 'Book Test Ride' button, select your nearest dealer, choose a convenient time slot, and we'll confirm your booking within 24 hours."},{question:"What are the financing options?",answer:"We partner with leading banks and NBFCs to offer flexible financing starting at ₹3,999/month. Zero down payment and instant approval available for eligible customers."}],Q=()=>(0,r.jsx)("section",{className:"section-padding",children:(0,r.jsxs)("div",{className:"container-custom max-w-4xl",children:[(0,r.jsxs)(b.P.div,{initial:{opacity:0,y:30},whileInView:{opacity:1,y:0},viewport:{once:!0},className:"text-center mb-16",children:[(0,r.jsxs)("h2",{className:"text-4xl md:text-5xl font-bold mb-4",children:["Frequently Asked ",(0,r.jsx)("span",{className:"gradient-text",children:"Questions"})]}),(0,r.jsx)("p",{className:"text-lg text-muted-foreground",children:"Everything you need to know about Aerix electric scooters"})]}),(0,r.jsx)(b.P.div,{initial:{opacity:0,y:30},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{delay:.2},children:(0,r.jsx)(Y,{type:"single",collapsible:!0,className:"space-y-4",children:K.map((e,t)=>(0,r.jsxs)($,{value:"item-".concat(t),className:"glass rounded-lg px-6 border-border",children:[(0,r.jsx)(H,{className:"text-left hover:text-primary",children:e.question}),(0,r.jsx)(J,{className:"text-muted-foreground",children:e.answer})]},t))})})]})});var Z=a(3664),ee=a(5917),et=a(6170),ea=a(8720);let er=()=>{let[e,t]=(0,s.useState)(""),[a,n]=(0,s.useState)(!1);return(0,r.jsx)("section",{className:"",children:(0,r.jsx)("div",{className:"container-custom",children:(0,r.jsxs)(b.P.div,{initial:{opacity:0,y:30},whileInView:{opacity:1,y:0},viewport:{once:!0},className:"glass rounded-3xl p-8 md:p-12 lg:p-16 relative overflow-hidden",children:[(0,r.jsx)("div",{className:"absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 opacity-30"}),(0,r.jsxs)("div",{className:"relative z-10 max-w-3xl mx-auto text-center space-y-8",children:[(0,r.jsxs)("div",{children:[(0,r.jsxs)("h2",{className:"text-4xl md:text-5xl font-bold mb-4",children:["Stay ",(0,r.jsx)("span",{className:"gradient-text",children:"Connected"})]}),(0,r.jsx)("p",{className:"text-lg text-muted-foreground",children:"Get the latest updates on new models, exclusive offers, and EV insights delivered to your inbox."})]}),(0,r.jsxs)("form",{onSubmit:a=>{a.preventDefault(),e&&(n(!0),ea.oR.success("Successfully subscribed to our newsletter!"),t(""),setTimeout(()=>n(!1),3e3))},className:"flex flex-col sm:flex-row gap-4 max-w-xl mx-auto",children:[(0,r.jsxs)("div",{className:"flex-1 relative",children:[(0,r.jsx)(Z.A,{className:"absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground"}),(0,r.jsx)(et.p,{type:"email",placeholder:"Enter your email",value:e,onChange:e=>t(e.target.value),className:"pl-12 h-12 bg-background/50",required:!0})]}),(0,r.jsx)(l.$,{type:"submit",size:"lg",className:"sm:w-auto",children:a?(0,r.jsxs)(r.Fragment,{children:[(0,r.jsx)(ee.A,{className:"w-5 h-5 mr-2"}),"Subscribed"]}):"Subscribe"})]}),(0,r.jsxs)("div",{className:"flex flex-wrap justify-center gap-6 text-sm text-muted-foreground",children:[(0,r.jsxs)("div",{className:"flex items-center gap-2",children:[(0,r.jsx)(ee.A,{className:"w-4 h-4 text-primary"}),(0,r.jsx)("span",{children:"Exclusive Launch Updates"})]}),(0,r.jsxs)("div",{className:"flex items-center gap-2",children:[(0,r.jsx)(ee.A,{className:"w-4 h-4 text-primary"}),(0,r.jsx)("span",{children:"Special Offers"})]}),(0,r.jsxs)("div",{className:"flex items-center gap-2",children:[(0,r.jsx)(ee.A,{className:"w-4 h-4 text-primary"}),(0,r.jsx)("span",{children:"EV Tips & Tricks"})]})]})]})]})})})};var es=a(3397),en=a(7650),ei=a(5229),el=a(5299),eo=a(235),ec=a(7507),ed=a(4916);let em=e=>{let{isOpen:t,onClose:a}=e,{toast:n}=(0,M.dj)(),[i,o]=(0,s.useState)(!1),[c,d]=(0,s.useState)({name:"",phone:"",email:"",product:"",pincode:"",whatsapp:!1,honeypot:""}),m=async e=>{if(e.preventDefault(),c.name.trim().length<2?(n({title:"Invalid Name",description:"Please enter your full name."}),!1):/^[\+]?[1-9][\d]{9,14}$/.test(c.phone)?/^\S+@\S+\.\S+$/.test(c.email)?c.product?!!/^\d{5,6}$/.test(c.pincode)||(n({title:"Invalid Pincode",description:"Please enter a valid pincode."}),!1):(n({title:"Select Product",description:"Please choose a vehicle category."}),!1):(n({title:"Invalid Email",description:"Please enter a valid email address."}),!1):(n({title:"Invalid Phone Number",description:"Enter a valid phone number."}),!1)){o(!0);try{let e={type:"interest",name:c.name,phone:c.phone,email:c.email,product:c.product,pincode:c.pincode,whatsapp:c.whatsapp,honeypot:c.honeypot},t=await fetch("".concat("http://localhost:3001","/api/email/send"),{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(e)}),r=await t.json();if(!t.ok){n({title:"Failed",description:r.message||"Unable to submit."}),o(!1);return}n({title:"Thank you for your interest!",description:"We have emailed you the confirmation."}),localStorage.setItem("aerixenergy-interest-submitted","true"),d({name:"",phone:"",email:"",product:"",pincode:"",whatsapp:!1,honeypot:""}),a()}catch(e){n({title:"Error",description:"Something went wrong. Try again."})}finally{o(!1)}}};return((0,s.useEffect)(()=>{let e=e=>{"Escape"===e.key&&a()};if(t){document.addEventListener("keydown",e);let t=window.scrollY;document.body.style.position="fixed",document.body.style.top="-".concat(t,"px"),document.body.style.width="100%"}return()=>{if(document.removeEventListener("keydown",e),t){let e=document.body.style.top;document.body.style.position="",document.body.style.top="",document.body.style.width="",window.scrollTo(0,-1*parseInt(e||"0"))}}},[t,a]),t)?(0,en.createPortal)((0,r.jsx)("div",{className:"fixed inset-0 z-[99999] flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm overflow-hidden",children:(0,r.jsxs)("div",{className:"glass rounded-2xl w-full max-w-md max-h-[90vh] overflow-y-auto",children:[(0,r.jsxs)("div",{className:"glass border-b border-border px-6 py-4 flex items-center justify-between",children:[(0,r.jsx)("h2",{className:"text-xl font-bold",children:"Are you interested in getting an Aerix Energy Product?"}),(0,r.jsx)("button",{onClick:a,className:"text-muted-foreground hover:text-foreground",children:(0,r.jsx)(ei.A,{size:24})})]}),(0,r.jsxs)("form",{onSubmit:m,className:"p-6 space-y-4",children:[(0,r.jsx)("input",{type:"text",value:c.honeypot,onChange:e=>d({...c,honeypot:e.target.value}),className:"hidden",autoComplete:"off",tabIndex:-1}),(0,r.jsxs)("div",{children:[(0,r.jsx)(eo.J,{children:"Name"}),(0,r.jsx)(et.p,{placeholder:"Your name",value:c.name,onChange:e=>d({...c,name:e.target.value}),required:!0})]}),(0,r.jsxs)("div",{children:[(0,r.jsx)(eo.J,{children:"Phone Number"}),(0,r.jsx)(et.p,{type:"tel",placeholder:"+91 98765 43210",value:c.phone,onChange:e=>d({...c,phone:e.target.value}),required:!0})]}),(0,r.jsxs)("div",{children:[(0,r.jsx)(eo.J,{children:"Email"}),(0,r.jsx)(et.p,{type:"email",placeholder:"your.email@example.com",value:c.email,onChange:e=>d({...c,email:e.target.value}),required:!0})]}),(0,r.jsxs)("div",{children:[(0,r.jsx)(eo.J,{children:"Product interested in"}),(0,r.jsxs)(ec.l6,{value:c.product,onValueChange:e=>d({...c,product:e}),required:!0,children:[(0,r.jsx)(ec.bq,{children:(0,r.jsx)(ec.yv,{placeholder:"Select Product"})}),(0,r.jsxs)(ec.gC,{children:[(0,r.jsx)(ec.eb,{value:"AERIX ENDURO",children:"AERIX ENDURO"}),(0,r.jsx)(ec.eb,{value:"AERIX GLIDE",children:"AERIX GLIDE"}),(0,r.jsx)(ec.eb,{value:"AERIX PRIME",children:"AERIX PRIME"}),(0,r.jsx)(ec.eb,{value:"AERIX RANGER",children:"AERIX RANGER"}),(0,r.jsx)(ec.eb,{value:"AERIX URBAN",children:"AERIX URBAN"}),(0,r.jsx)(ec.eb,{value:"AERIX TITAN",children:"AERIX TITAN"}),(0,r.jsx)(ec.eb,{value:"AERIX VOLT",children:"AERIX VOLT"})]})]})]}),(0,r.jsxs)("div",{children:[(0,r.jsx)(eo.J,{children:"Pincode"}),(0,r.jsx)(et.p,{placeholder:"Enter your pincode",value:c.pincode,onChange:e=>d({...c,pincode:e.target.value}),required:!0})]}),(0,r.jsxs)("div",{className:"flex items-center space-x-2",children:[(0,r.jsx)(ed.S,{checked:c.whatsapp,onCheckedChange:e=>d({...c,whatsapp:e})}),(0,r.jsx)(eo.J,{className:"cursor-pointer",children:"Get updates on WhatsApp"})]}),(0,r.jsx)(l.$,{type:"submit",size:"lg",className:"w-full",disabled:i,children:i?(0,r.jsxs)(r.Fragment,{children:[(0,r.jsx)(el.A,{className:"mr-2 h-4 w-4 animate-spin"}),"Submitting..."]}):"Proceed"})]})]})}),document.body):null};function eu(){let[e,t]=(0,s.useState)(!1);return(0,s.useEffect)(()=>{if("true"!==localStorage.getItem("aerix-energy-interest-submitted")){let e=setTimeout(()=>{t(!0)},1e4);return()=>clearTimeout(e)}},[]),(0,r.jsxs)("div",{className:"min-h-screen bg-[#F8F9FA]",children:[(0,r.jsx)(n.A,{}),(0,r.jsxs)("main",{children:[(0,r.jsx)(h,{}),(0,r.jsx)(A,{}),(0,r.jsx)(L,{}),(0,r.jsx)(X,{}),(0,r.jsx)(B,{}),(0,r.jsx)(Q,{}),(0,r.jsx)(er,{})]}),(0,r.jsx)(es.A,{}),(0,r.jsx)(em,{isOpen:e,onClose:()=>t(!1)})]})}}},e=>{e.O(0,[459,182,691,921,441,255,358],()=>e(e.s=9198)),_N_E=e.O()}]);
+(self.webpackChunk_N_E = self.webpackChunk_N_E || []).push([
+  [974],
+  {
+    7812: (e, t, a) => {
+      "use strict";
+      a.d(t, { E: () => l });
+      var r = a(5155);
+      a(2115);
+      var s = a(3101),
+        n = a(5016);
+      let i = (0, s.F)(
+        "inline-flex items-center rounded-full border px-2.5 py-0.5 text-xs font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2",
+        {
+          variants: {
+            variant: {
+              default:
+                "border-transparent bg-primary text-primary-foreground hover:bg-primary/80",
+              secondary:
+                "border-transparent bg-secondary text-secondary-foreground hover:bg-secondary/80",
+              destructive:
+                "border-transparent bg-destructive text-destructive-foreground hover:bg-destructive/80",
+              outline: "text-foreground",
+            },
+          },
+          defaultVariants: { variant: "default" },
+        },
+      );
+      function l(e) {
+        let { className: t, variant: a, ...s } = e;
+        return (0, r.jsx)("div", {
+          className: (0, n.cn)(i({ variant: a }), t),
+          ...s,
+        });
+      }
+    },
+    9198: (e, t, a) => {
+      Promise.resolve().then(a.bind(a, 9932));
+    },
+    9932: (e, t, a) => {
+      "use strict";
+      (a.r(t), a.d(t, { default: () => eu }));
+      var r = a(5155),
+        s = a(2115),
+        n = a(1725),
+        i = a(5239),
+        l = a(7003),
+        o = a(1651);
+      let c = [
+          "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_prime_orange_large.png",
+          "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_glide_blue_large.png",
+          "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_titan_white_large.png",
+          "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_volt_black_large.png",
+          "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_urban_grey_large.png",
+          "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_range_black_large.png",
+        ],
+        d = {
+          "aerix_prime_orange_large.png":
+            "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_prime_orange_small.png",
+          "aerix_glide_blue_large.png":
+            "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_glide_blue_small.png",
+          "aerix_titan_white_large.png":
+            "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_titan_white_small.png",
+          "aerix_volt_black_large.png":
+            "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_volt_black_small.png",
+          "aerix_urban_grey_large.png":
+            "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_urban_grey_small.png",
+          "aerix_range_black_large.png":
+            "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_ranger_black_small.png",
+        },
+        m = [
+          {
+            title: "Smooth Electric Performance",
+            subtitle: "BLDC hub motor built for effortless city rides.",
+            metric: { value: "45 km/h", label: "Top Speed" },
+            modelName: "Aerix Wolf 2.0",
+            color: "Orange",
+          },
+          {
+            title: "Aerodynamic Design",
+            subtitle: "Sculpted panels for stability and efficiency.",
+            metric: { value: "Optimized", label: "Airflow Design" },
+            modelName: "Aerix Sharvil",
+            color: "Peacock Blue",
+          },
+          {
+            title: "Smart Connectivity",
+            subtitle: "Your scooter, connected to your world.",
+            metric: { value: "Smart", label: "Connected Tech" },
+            modelName: "Aerix Aurra Pro",
+            color: "White",
+          },
+          {
+            title: "All-Weather Build",
+            subtitle: "IP67 rated. Ready for any season.",
+            metric: { value: "IP67", label: "Water & Dust Rating" },
+            modelName: "Aerix Loader",
+            color: "Black",
+          },
+          {
+            title: "Limitless Range",
+            subtitle: "Go further with 110km true range.",
+            metric: { value: "110 km", label: "True Range" },
+            modelName: "Aerix GTR++",
+            color: "Grey",
+          },
+          {
+            title: "Future Ready",
+            subtitle: "Updates over the air. Always new.",
+            metric: { value: "3 Yr", label: "Battery Warranty" },
+            modelName: "AERIX RANGER",
+            color: "Black",
+          },
+        ],
+        u = [c[c.length - 1], ...c, c[0]],
+        p = [m[m.length - 1], ...m, m[0]],
+        x = (e, t, a) => e + (t - e) * a,
+        h = () => {
+          let e = (0, s.useRef)(null),
+            t = (0, s.useRef)(null),
+            [a, n] = (0, s.useState)(!1),
+            [m, h] = (0, s.useState)("Aerix Wolf 2.0"),
+            [g, b] = (0, s.useState)("Orange"),
+            [f, v] = (0, s.useState)(0),
+            y = (0, s.useRef)({ current: 0, target: 0 }),
+            w = (0, s.useRef)(!1),
+            j = (0, s.useRef)(0),
+            N = (0, s.useRef)(),
+            E = (0, s.useRef)(),
+            _ = (0, s.useRef)(!1),
+            k = (0, s.useRef)(null),
+            A = (0, s.useRef)(null);
+          (0, s.useRef)(0);
+          let S = (0, s.useRef)(0),
+            [I, R] = (0, s.useState)(!1);
+          ((0, s.useEffect)(() => {
+            R(window.innerWidth < 768);
+            let e = () => {
+              R(window.innerWidth < 768);
+            };
+            return (
+              window.addEventListener("resize", e),
+              () => window.removeEventListener("resize", e)
+            );
+          }, []),
+            (0, s.useEffect)(() => {
+              if (!_.current) {
+                let e = window.innerWidth;
+                ((y.current.current = -e),
+                  (y.current.target = -e),
+                  (_.current = !0));
+              }
+            }, []));
+          let C = (0, s.useCallback)((e) => {
+              let t = window.innerWidth;
+              y.current.target = -((e + 1) * t);
+            }, []),
+            P = (0, s.useCallback)(() => {
+              let e = window.innerWidth,
+                t = Math.round(y.current.target / e) * e;
+              y.current.target = t;
+            }, []);
+          (0, s.useEffect)(() => {
+            t.current &&
+              (A.current = t.current.querySelectorAll(".hero-image"));
+          }, []);
+          let F = (0, s.useCallback)(() => {
+            let e = window.innerWidth,
+              a = e < 768;
+            y.current.current = x(y.current.current, y.current.target, 0.08);
+            let r = window.scrollY;
+            S.current = x(S.current, r, 0.07);
+            window.innerHeight;
+            (S.current,
+              k.current &&
+                ((k.current.style.clipPath = "inset(0px 0px 0px 0px)"),
+                (k.current.style.transform = "none")));
+            let s = y.current.current,
+              n = c.length;
+            if (s >= -0.01) {
+              let t = -(n * e);
+              ((y.current.current = t),
+                (y.current.target = t + (y.current.target - s)));
+            } else if (s <= -((n + 1) * e) + 0.01) {
+              let t = -e;
+              ((y.current.current = t),
+                (y.current.target = t + (y.current.target - s)));
+            }
+            if (t.current) {
+              let r = y.current.current;
+              t.current.style.transform = "translate3d(".concat(r, "px, 0, 0)");
+              let s = Math.round(Math.abs(r / e)) - 1;
+              (s < 0 && (s = n - 1), s >= n && (s = 0), s !== f && v(s));
+              {
+                let s = A.current;
+                if (
+                  (!s &&
+                    t.current &&
+                    (A.current = s = t.current.querySelectorAll(".hero-image")),
+                  s)
+                ) {
+                  let t = Math.min(
+                      Math.max(S.current / window.innerHeight, 0),
+                      1,
+                    ),
+                    n = Math.max(1.08, 1.12 - 0.04 * t),
+                    i = 25 * t;
+                  s.forEach((t, s) => {
+                    let l = s * e + r,
+                      o = l / e;
+                    if (a)
+                      ((t.style.transform = "translateX("
+                        .concat(-(35 * o), "%) translateY(")
+                        .concat(i, "px) scale(")
+                        .concat(n + 0.05, ")")),
+                        (t.style.objectPosition = "50% 50%"));
+                    else {
+                      t.style.transform = "translate3d("
+                        .concat(-(0.25 * l), "px, ")
+                        .concat(i, "px, 0) scale(")
+                        .concat(n, ")");
+                      let e = Math.max(15, Math.min(85, 50 - 25 * o));
+                      t.style.objectPosition = "".concat(e, "% 50%");
+                    }
+                  });
+                }
+              }
+            }
+            N.current = requestAnimationFrame(F);
+          }, [f]);
+          return (
+            (0, s.useEffect)(
+              () => (
+                (N.current = requestAnimationFrame(F)),
+                () => {
+                  N.current && cancelAnimationFrame(N.current);
+                }
+              ),
+              [F],
+            ),
+            (0, s.useEffect)(() => {
+              let t = e.current;
+              if (!t) return;
+              let a = (e) => {
+                  Math.abs(e.deltaX) > Math.abs(e.deltaY) &&
+                    (e.preventDefault(),
+                    (y.current.target -= 1.6 * e.deltaX),
+                    E.current && clearTimeout(E.current),
+                    (E.current = setTimeout(() => {
+                      P();
+                    }, 150)));
+                },
+                r = (e) => {
+                  ((w.current = !0),
+                    (j.current = e),
+                    E.current && clearTimeout(E.current),
+                    (t.style.cursor = "grabbing"));
+                },
+                s = (e) => {
+                  if (!w.current) return;
+                  let t = (e - j.current) * 2;
+                  ((j.current = e), (y.current.target += t));
+                },
+                n = () => {
+                  ((w.current = !1), P(), (t.style.cursor = "grab"));
+                },
+                i = (e) => r(e.touches[0].clientX),
+                l = (e) => s(e.touches[0].clientX),
+                o = () => n(),
+                c = (e) => {
+                  (e.preventDefault(), r(e.clientX));
+                },
+                d = (e) => {
+                  (e.preventDefault(), s(e.clientX));
+                },
+                m = () => n(),
+                u = () => {
+                  w.current && n();
+                };
+              return (
+                t.addEventListener("wheel", a, { passive: !1 }),
+                t.addEventListener("touchstart", i, { passive: !0 }),
+                t.addEventListener("touchmove", l, { passive: !0 }),
+                t.addEventListener("touchend", o),
+                t.addEventListener("mousedown", c),
+                t.addEventListener("mousemove", d),
+                t.addEventListener("mouseup", m),
+                t.addEventListener("mouseleave", u),
+                () => {
+                  (t.removeEventListener("wheel", a),
+                    t.removeEventListener("touchstart", i),
+                    t.removeEventListener("touchmove", l),
+                    t.removeEventListener("touchend", o),
+                    t.removeEventListener("mousedown", c),
+                    t.removeEventListener("mousemove", d),
+                    t.removeEventListener("mouseup", m),
+                    t.removeEventListener("mouseleave", u));
+                }
+              );
+            }, [P]),
+            (0, r.jsx)("section", {
+              className: "relative w-full z-0",
+              style: { height: "200vh", marginBottom: "-100vh" },
+              children: (0, r.jsx)("div", {
+                className: "sticky top-0 h-screen w-full overflow-hidden",
+                children: (0, r.jsx)("div", {
+                  ref: k,
+                  className:
+                    "absolute inset-0 will-change-transform origin-center",
+                  style: { clipPath: "inset(0% 0% 0% 0% round 0px)" },
+                  children: (0, r.jsxs)("div", {
+                    ref: e,
+                    className:
+                      "relative h-full w-full overflow-hidden bg-background select-none cursor-grab active:cursor-grabbing",
+                    children: [
+                      (0, r.jsx)("div", {
+                        ref: t,
+                        className: "flex h-full will-change-transform",
+                        style: { width: "".concat(100 * u.length, "vw") },
+                        children: u.map((e, t) =>
+                          (0, r.jsxs)(
+                            "div",
+                            {
+                              className:
+                                "flex-shrink-0 w-screen h-full relative overflow-hidden flex items-center justify-center border-r border-white/5 bg-[#0a0a0a]",
+                              children: [
+                                (0, r.jsxs)("div", {
+                                  className:
+                                    "absolute inset-0 w-full h-full overflow-hidden",
+                                  children: [
+                                    (0, r.jsx)(i.default, {
+                                      src: I
+                                        ? ((e) => {
+                                            var t;
+                                            let a =
+                                              null == (t = e.split("/").pop())
+                                                ? void 0
+                                                : t.split("?")[0];
+                                            return (a && d[a]) || e;
+                                          })(e)
+                                        : e,
+                                      alt: p[t].title,
+                                      fill: !0,
+                                      className:
+                                        "hero-image object-cover will-change-transform scale-105",
+                                      draggable: !1,
+                                      priority: t <= 2,
+                                      quality: 90,
+                                      sizes: "100vw",
+                                    }),
+                                    (0, r.jsx)("div", {
+                                      className:
+                                        "absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/20 z-10 pointer-events-none",
+                                    }),
+                                  ],
+                                }),
+                                (0, r.jsx)("div", {
+                                  className:
+                                    "absolute top-28 left-0 w-full px-6 sm:px-12 md:px-24 text-left z-20 transition-opacity duration-1000 ".concat(
+                                      (0 === t && f === c.length - 1) ||
+                                        (t === u.length - 1 && 0 === f) ||
+                                        t === f + 1
+                                        ? "opacity-100 delay-300"
+                                        : "opacity-0",
+                                    ),
+                                  children: (0, r.jsxs)("div", {
+                                    className: "max-w-xl",
+                                    children: [
+                                      (0, r.jsx)("h2", {
+                                        className:
+                                          "text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-[#F2F2F2]",
+                                        children: p[t].title,
+                                      }),
+                                      (0, r.jsx)("p", {
+                                        className:
+                                          "hidden md:block text-lg md:text-xl font-medium text-[#F2F2F2]/80 tracking-wide mt-3 max-w-lg",
+                                        children: p[t].subtitle,
+                                      }),
+                                      (0, r.jsxs)("div", {
+                                        className:
+                                          "hidden md:flex items-center gap-4 pt-8",
+                                        children: [
+                                          (0, r.jsx)(l.$, {
+                                            size: "lg",
+                                            className:
+                                              "rounded-full px-8 h-12 text-base bg-[#F2F2F2] text-black hover:bg-white transition-all font-semibold shadow-none border-none",
+                                            onClick: () => {
+                                              (h(p[t].modelName),
+                                                b(p[t].color),
+                                                n(!0));
+                                            },
+                                            children: "Enquiry Now",
+                                          }),
+                                          (0, r.jsx)(l.$, {
+                                            size: "lg",
+                                            variant: "link",
+                                            className:
+                                              "px-0 text-[#F2F2F2] hover:text-white transition-all text-base h-12 decoration-transparent",
+                                            onClick: () => {
+                                              let e =
+                                                document.getElementById(
+                                                  "products",
+                                                );
+                                              e &&
+                                                e.scrollIntoView({
+                                                  behavior: "smooth",
+                                                });
+                                            },
+                                            children: "Explore Models →",
+                                          }),
+                                        ],
+                                      }),
+                                    ],
+                                  }),
+                                }),
+                                (0, r.jsx)("div", {
+                                  className:
+                                    "hidden md:block absolute bottom-32 right-24 z-20 text-right transition-all duration-1000 ease-out ".concat(
+                                      (0 === t && f === c.length - 1) ||
+                                        (t === u.length - 1 && 0 === f) ||
+                                        t === f + 1
+                                        ? "opacity-100 translate-y-0 delay-500"
+                                        : "opacity-0 translate-y-8",
+                                    ),
+                                  children: (0, r.jsxs)("div", {
+                                    className: "flex flex-col items-end",
+                                    children: [
+                                      (0, r.jsx)("span", {
+                                        className:
+                                          "text-6xl font-normal tracking-tighter text-[#F2F2F2] tabular-nums leading-none",
+                                        children: p[t].metric.value,
+                                      }),
+                                      (0, r.jsx)("span", {
+                                        className:
+                                          "text-sm font-medium tracking-[0.2em] text-[#F2F2F2]/60 uppercase mt-2",
+                                        children: p[t].metric.label,
+                                      }),
+                                    ],
+                                  }),
+                                }),
+                                (0, r.jsxs)("div", {
+                                  className:
+                                    "md:hidden absolute bottom-24 left-6 right-6 z-20 flex justify-between items-start transition-all duration-1000 ease-out ".concat(
+                                      (0 === t && f === c.length - 1) ||
+                                        (t === u.length - 1 && 0 === f) ||
+                                        t === f + 1
+                                        ? "opacity-100 translate-y-0 delay-500"
+                                        : "opacity-0 translate-y-8",
+                                    ),
+                                  children: [
+                                    (0, r.jsx)(l.$, {
+                                      size: "sm",
+                                      className:
+                                        "rounded-full h-10 px-6 text-sm bg-[#F2F2F2] text-black hover:bg-white transition-all font-semibold shadow-none border-none mt-1",
+                                      onClick: () => {
+                                        (h(p[t].modelName),
+                                          b(p[t].color),
+                                          n(!0));
+                                      },
+                                      children: "Enquiry Now",
+                                    }),
+                                    (0, r.jsxs)("div", {
+                                      className:
+                                        "flex flex-col items-end text-right",
+                                      children: [
+                                        (0, r.jsx)("span", {
+                                          className:
+                                            "text-4xl font-normal tracking-tighter text-[#F2F2F2] tabular-nums leading-none",
+                                          children: p[t].metric.value,
+                                        }),
+                                        (0, r.jsx)("span", {
+                                          className:
+                                            "text-sm font-medium tracking-[0.2em] text-[#F2F2F2]/60 uppercase mt-2",
+                                          children: (() => {
+                                            let e = p[t].metric.label;
+                                            if ("Water & Dust Rating" === e)
+                                              return (0, r.jsxs)(r.Fragment, {
+                                                children: [
+                                                  "Water &",
+                                                  (0, r.jsx)("br", {}),
+                                                  "Dust Rating",
+                                                ],
+                                              });
+                                            if ("Battery Warranty" === e)
+                                              return (0, r.jsxs)(r.Fragment, {
+                                                children: [
+                                                  "Battery",
+                                                  (0, r.jsx)("br", {}),
+                                                  "Warranty",
+                                                ],
+                                              });
+                                            if (e.length > 15) {
+                                              let t = e.split(" "),
+                                                a = t.pop();
+                                              return (0, r.jsxs)(r.Fragment, {
+                                                children: [
+                                                  t.join(" "),
+                                                  (0, r.jsx)("br", {}),
+                                                  a,
+                                                ],
+                                              });
+                                            }
+                                            return e;
+                                          })(),
+                                        }),
+                                      ],
+                                    }),
+                                  ],
+                                }),
+                              ],
+                            },
+                            t,
+                          ),
+                        ),
+                      }),
+                      (0, r.jsx)("div", {
+                        className:
+                          "absolute bottom-12 left-6 sm:left-12 z-20 flex gap-3",
+                        children: c.map((e, t) =>
+                          (0, r.jsx)(
+                            "button",
+                            {
+                              onClick: () => C(t),
+                              className:
+                                "h-2 rounded-full transition-all duration-500 shadow-sm ".concat(
+                                  t === f
+                                    ? "w-8 bg-[#F2F2F2]"
+                                    : "w-2 bg-[#F2F2F2]/40 hover:bg-[#F2F2F2]/60",
+                                ),
+                              "aria-label": "Go to slide ".concat(t + 1),
+                            },
+                            t,
+                          ),
+                        ),
+                      }),
+                      (0, r.jsx)(o.A, {
+                        open: a,
+                        onOpenChange: n,
+                        preSelectedModel: m,
+                        preSelectedColor: g,
+                        isEnquiry: !0,
+                      }),
+                    ],
+                  }),
+                }),
+              }),
+            })
+          );
+        };
+      var g = a(7812),
+        b = a(4114),
+        f = a(6154),
+        v = a(7910),
+        y = a(2508),
+        w = a(9068),
+        j = a(2320),
+        N = a(534),
+        E = a(63);
+      let _ = [
+          {
+            _id: "1",
+            name: "Aerix Ninja Mini",
+            tagline: "Smart Wireless Controller (IP64)",
+            price: "50,000",
+            monthlyEmi: "2,399",
+            images: [
+              "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_enduro_grey_large.png",
+              "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_enduro_blue_large.png",
+              "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_enduro_white_large.png",
+            ],
+            range: 90,
+            topSpeed: 45,
+            color: "Grey",
+          },
+          {
+            _id: "5",
+            name: "Aerix GTR++",
+            tagline: "BLDC Hub Motor (IP67)",
+            price: "60,000",
+            monthlyEmi: "3,199",
+            images: [
+              "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_urban_grey_large.png",
+              "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_urban_white_large.png",
+            ],
+            range: 90,
+            topSpeed: 45,
+            color: "Grey",
+          },
+          {
+            _id: "2",
+            name: "Aerix Sharvil",
+            tagline: "BLDC Hub Motor (IP67)",
+            price: "65,000",
+            monthlyEmi: "2,599",
+            images: [
+              "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_glide_blue_large.png",
+              "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_glide_grey_large.png",
+              "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_glide_white_large.png",
+            ],
+            range: 90,
+            topSpeed: 45,
+            color: "Peacock Blue",
+          },
+          {
+            _id: "6",
+            name: "Aerix Aurra Pro",
+            tagline: "Smart Wireless Controller (IP64)",
+            price: "70,000",
+            monthlyEmi: "3,299",
+            images: [
+              "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_titan_white_large.png",
+              "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_titan_gold_large.png",
+            ],
+            range: 90,
+            topSpeed: 45,
+            color: "White",
+          },
+          {
+            _id: "7",
+            name: "Aerix Loader",
+            tagline: "Smart Wireless Controller (IP64)",
+            price: "85,000",
+            monthlyEmi: "3,499",
+            images: [
+              "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_volt_black_large.png",
+            ],
+            range: 90,
+            topSpeed: 45,
+            color: "Black",
+          },
+          {
+            _id: "3",
+            name: "Aerix Wolf 2.0",
+            tagline: "Smart Wireless Controller (IP64)",
+            price: "90,000",
+            monthlyEmi: "2,799",
+            images: [
+              "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_prime_orange_large.png",
+              "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_prime_grey_large.png",
+              "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_prime_white_large.png",
+            ],
+            range: 90,
+            topSpeed: 45,
+            color: "Orange",
+          },
+          {
+            _id: "4",
+            name: "Aerix Ranger",
+            tagline: "BLDC Hub Motor (IP67)",
+            price: "100000",
+            monthlyEmi: "2,999",
+            images: [
+              "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_ranger_grey_large.png",
+              "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_ranger_white_large.png",
+              "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_range_black_large.png",
+            ],
+            range: 90,
+            topSpeed: 45,
+            color: "Grey",
+          },
+        ],
+        k = (e) => {
+          let { model: t, onEnquireClick: a } = e,
+            n = (0, E.useRouter)(),
+            [o, c] = (0, s.useState)(0),
+            d = (0, s.useRef)(null),
+            [m, u] = (0, s.useState)(!1),
+            [p, x] = (0, s.useState)(0),
+            [h, f] = (0, s.useState)(0),
+            [v, y] = (0, s.useState)(!1);
+          (0, s.useEffect)(() => {
+            let e = () => {
+              y(window.matchMedia("(max-width: 768px)").matches);
+            };
+            return (
+              e(),
+              window.addEventListener("resize", e),
+              () => window.removeEventListener("resize", e)
+            );
+          }, []);
+          let w = (0, s.useRef)(null);
+          return (0, r.jsx)(b.P.div, {
+            ref: w,
+            initial: { opacity: 0, y: 30 },
+            whileInView: { opacity: 1, y: 0 },
+            viewport: { once: !0 },
+            className: "group relative flex flex-col h-full",
+            children: (0, r.jsxs)(b.P.div, {
+              whileInView: v ? "focused" : void 0,
+              initial: v ? "default" : void 0,
+              variants: v
+                ? {
+                    default: {
+                      boxShadow: "0 1px 2px 0 rgb(0 0 0 / 0.05)",
+                      borderColor: "transparent",
+                    },
+                    focused: {
+                      boxShadow:
+                        "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)",
+                      borderColor: "rgba(0,0,0,0.05)",
+                      transition: { duration: 0.5, ease: "easeOut" },
+                    },
+                  }
+                : {},
+              viewport: { amount: 0.6, margin: "0px" },
+              className:
+                "relative flex flex-col h-full bg-white rounded-[2.5rem] p-3 transition-all duration-500 ease-out border shadow-sm hover:shadow-xl hover:border-black/5",
+              children: [
+                (0, r.jsxs)("div", {
+                  className:
+                    "relative w-full aspect-[4/3] rounded-[2rem] overflow-hidden duration-500 ease-out",
+                  children: [
+                    (0, r.jsx)("div", {
+                      className: "absolute top-5 right-5 z-10",
+                      children: (0, r.jsxs)(g.E, {
+                        variant: "secondary",
+                        className:
+                          "backdrop-blur-md bg-white/70 hover:bg-white/90 text-foreground font-medium shadow-sm rounded-full px-3 py-1 border-0",
+                        children: ["₹", t.monthlyEmi, "/mo"],
+                      }),
+                    }),
+                    (0, r.jsx)("div", {
+                      ref: d,
+                      className:
+                        "w-full h-full flex overflow-x-auto scrollbar-hide items-center ".concat(
+                          m
+                            ? "cursor-grabbing snap-none"
+                            : "cursor-grab snap-x snap-mandatory",
+                        ),
+                      onScroll: () => {
+                        d.current &&
+                          c(
+                            Math.round(
+                              d.current.scrollLeft / d.current.offsetWidth,
+                            ),
+                          );
+                      },
+                      onMouseDown: (e) => {
+                        d.current &&
+                          (u(!0),
+                          x(e.pageX - d.current.offsetLeft),
+                          f(d.current.scrollLeft));
+                      },
+                      onMouseLeave: () => {
+                        u(!1);
+                      },
+                      onMouseUp: () => {
+                        u(!1);
+                      },
+                      onMouseMove: (e) => {
+                        if (!m || !d.current) return;
+                        e.preventDefault();
+                        let t = e.pageX - d.current.offsetLeft;
+                        d.current.scrollLeft = h - (t - p);
+                      },
+                      style: {
+                        scrollbarWidth: "none",
+                        msOverflowStyle: "none",
+                        scrollBehavior: m ? "auto" : "smooth",
+                      },
+                      children: t.images.map((e, a) =>
+                        (0, r.jsx)(
+                          "div",
+                          {
+                            className:
+                              "min-w-full h-full flex items-center justify-center snap-center p-0 md:px-4 md:pt-4 pointer-events-none select-none relative",
+                            children: (0, r.jsx)(i.default, {
+                              src: e,
+                              alt: "".concat(t.name, " view ").concat(a + 1),
+                              fill: !0,
+                              className:
+                                "object-cover rounded-[1.8rem] shadow-sm transition-transform duration-700 ease-out group-hover:scale-[1.02]",
+                              draggable: !1,
+                              priority: 0 === a,
+                              quality: 85,
+                              sizes:
+                                "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
+                            }),
+                          },
+                          a,
+                        ),
+                      ),
+                    }),
+                    t.images.length > 1 &&
+                      (0, r.jsx)("div", {
+                        className:
+                          "absolute bottom-4 left-0 right-0 flex justify-center gap-1.5 z-10",
+                        children: t.images.map((e, t) =>
+                          (0, r.jsx)(
+                            "button",
+                            {
+                              onClick: (e) => {
+                                (e.stopPropagation(),
+                                  ((e) => {
+                                    if (d.current) {
+                                      let t = d.current.offsetWidth;
+                                      (d.current.scrollTo({
+                                        left: t * e,
+                                        behavior: "smooth",
+                                      }),
+                                        c(e));
+                                    }
+                                  })(t));
+                              },
+                              className:
+                                "h-1.5 rounded-full transition-all duration-300 shadow-sm ".concat(
+                                  t === o
+                                    ? "w-6 bg-white"
+                                    : "w-1.5 bg-gray-300/80 hover:bg-gray-200",
+                                ),
+                              "aria-label": "Go to image ".concat(t + 1),
+                            },
+                            t,
+                          ),
+                        ),
+                      }),
+                  ],
+                }),
+                (0, r.jsxs)("div", {
+                  className: "flex flex-col flex-1 px-5 pt-5 pb-4",
+                  children: [
+                    (0, r.jsx)("div", {
+                      className: "",
+                      children: (0, r.jsx)("h3", {
+                        className:
+                          "text-2xl font-bold tracking-tight text-foreground group-hover:text-primary transition-colors",
+                        children: t.name,
+                      }),
+                    }),
+                    (0, r.jsx)("div", { className: "flex-1" }),
+                    (0, r.jsx)("div", {
+                      className: "h-px w-full bg-border/40 my-4",
+                    }),
+                    (0, r.jsxs)("div", {
+                      className:
+                        "flex items-center justify-between gap-2 md:gap-4",
+                      children: [
+                        (0, r.jsxs)("div", {
+                          className: "flex flex-col shrink-0",
+                          children: [
+                            (0, r.jsx)("p", {
+                              className:
+                                "text-[9px] md:text-[10px] uppercase tracking-wider font-semibold text-muted-foreground",
+                              children: "Starting at",
+                            }),
+                            (0, r.jsxs)("span", {
+                              className:
+                                "text-base md:text-lg font-bold text-foreground",
+                              children: ["₹ ", t.price],
+                            }),
+                          ],
+                        }),
+                        (0, r.jsxs)("div", {
+                          className:
+                            "flex items-center gap-1.5 md:gap-2 overflow-x-auto",
+                          children: [
+                            (0, r.jsx)(l.$, {
+                              variant: "ghost",
+                              className:
+                                "h-9 md:h-10 px-2.5 md:px-4 text-xs md:text-sm font-semibold hover:bg-black/5 rounded-xl text-muted-foreground hover:text-foreground transition-colors duration-500 ease-out",
+                              onClick: () => a(t.name.toUpperCase(), t.color),
+                              children: "Enquire",
+                            }),
+                            (0, r.jsx)(l.$, {
+                              className:
+                                "h-9 md:h-10 px-4 md:px-6 text-xs md:text-sm font-semibold shadow-md shadow-primary/20 rounded-xl",
+                              onClick: () => n.push("/product/".concat(t._id)),
+                              children: "Explore",
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          });
+        };
+      function A() {
+        let [e, t] = (0, s.useState)(!1),
+          [a, n] = (0, s.useState)(""),
+          [i, l] = (0, s.useState)(""),
+          c = (e, a) => {
+            (n(e), l(a || ""), t(!0));
+          };
+        return (0, r.jsxs)("section", {
+          id: "products",
+          className: "pt-24 pb-8 bg-[#F8F9FA] relative z-10 text-foreground",
+          children: [
+            (0, r.jsxs)("div", {
+              className: "container mx-auto px-4",
+              children: [
+                (0, r.jsxs)(b.P.div, {
+                  initial: { opacity: 0, y: 20 },
+                  whileInView: { opacity: 1, y: 0 },
+                  viewport: { once: !0 },
+                  className: "text-center mb-16 space-y-4",
+                  children: [
+                    (0, r.jsx)(g.E, {
+                      variant: "secondary",
+                      className:
+                        "px-4 py-1.5 text-sm font-medium rounded-full bg-white text-primary shadow-sm border-white/20",
+                      children: "Our Collection",
+                    }),
+                    (0, r.jsxs)("h2", {
+                      className:
+                        "text-4xl md:text-5xl font-bold tracking-tight text-foreground",
+                      children: [
+                        "Designed for ",
+                        (0, r.jsx)("span", {
+                          className: "text-primary",
+                          children: "Every Journey",
+                        }),
+                      ],
+                    }),
+                    (0, r.jsx)("p", {
+                      className:
+                        "text-xl text-muted-foreground/80 max-w-2xl mx-auto",
+                      children:
+                        "Experience the future of mobility with our premium electric scooters. Engineered for performance, styled for you.",
+                    }),
+                  ],
+                }),
+                (0, r.jsx)("div", {
+                  className:
+                    "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pb-10",
+                  children: _.map((e) =>
+                    (0, r.jsx)(k, { model: e, onEnquireClick: c }, e._id),
+                  ),
+                }),
+              ],
+            }),
+            (0, r.jsx)(o.A, {
+              open: e,
+              onOpenChange: t,
+              preSelectedModel: a,
+              preSelectedColor: i,
+              isEnquiry: !0,
+            }),
+          ],
+        });
+      }
+      (f.A, v.A, y.A, w.A, j.A, N.A);
+      var S = a(2864),
+        I = a(598),
+        R = a(4157);
+      let C = [
+          {
+            icon: (0, r.jsx)(S.A, { className: "w-8 h-8 text-primary" }),
+            title: "150km Range",
+            description:
+              "Go further with our advanced Lithium-ion battery technology designed for long commutes.",
+            colSpan: "md:col-span-2",
+            bgImage:
+              "linear-gradient(to right bottom, rgba(255,255,255,0.9), rgba(255,255,255,0.6)), url('https://images.unsplash.com/photo-1620802051782-726fa6b3308d?auto=format&fit=crop&q=80')",
+          },
+          {
+            icon: (0, r.jsx)(f.A, { className: "w-8 h-8 text-secondary" }),
+            title: "Fast Charging",
+            description: "0 to 80% in just 40 minutes.",
+            colSpan: "md:col-span-1",
+            highlight: !0,
+          },
+          {
+            icon: (0, r.jsx)(I.A, { className: "w-8 h-8 text-primary" }),
+            title: "85 km/h",
+            description: "Top speed that keeps you ahead of traffic.",
+            colSpan: "md:col-span-1",
+          },
+          {
+            icon: (0, r.jsx)(y.A, { className: "w-8 h-8 text-blue-500" }),
+            title: "Smart Connect",
+            description: "Control your ride with our dedicated app.",
+            colSpan: "md:col-span-2",
+            hasGradient: !0,
+          },
+          {
+            icon: (0, r.jsx)(v.A, { className: "w-8 h-8 text-green-500" }),
+            title: "Advanced Safety",
+            description: "CBS braking system and anti-theft alarm.",
+            colSpan: "md:col-span-1",
+          },
+          {
+            icon: (0, r.jsx)(R.A, { className: "w-8 h-8 text-cyan-500" }),
+            title: "Aerodynamic",
+            description: "Sleek design for maximum efficiency.",
+            colSpan: "md:col-span-2",
+          },
+        ],
+        P = {
+          hidden: { opacity: 0 },
+          visible: { opacity: 1, transition: { staggerChildren: 0.1 } },
+        },
+        F = {
+          hidden: { opacity: 0, y: 20 },
+          visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+        },
+        L = () =>
+          (0, r.jsxs)("section", {
+            className: "section-padding relative overflow-hidden bg-gray-50/50",
+            id: "features",
+            children: [
+              (0, r.jsxs)("div", {
+                className:
+                  "absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none",
+                children: [
+                  (0, r.jsx)("div", {
+                    className:
+                      "absolute top-[-10%] right-[-5%] w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px]",
+                  }),
+                  (0, r.jsx)("div", {
+                    className:
+                      "absolute bottom-[-10%] left-[-5%] w-[500px] h-[500px] bg-secondary/5 rounded-full blur-[100px]",
+                  }),
+                ],
+              }),
+              (0, r.jsxs)("div", {
+                className: "container-custom relative z-10",
+                children: [
+                  (0, r.jsxs)("div", {
+                    className: "text-center mb-16 max-w-2xl mx-auto",
+                    children: [
+                      (0, r.jsxs)(b.P.h2, {
+                        initial: { opacity: 0, y: 20 },
+                        whileInView: { opacity: 1, y: 0 },
+                        viewport: { once: !0 },
+                        className:
+                          "text-4xl md:text-5xl font-bold mb-6 tracking-tight text-gray-900",
+                        children: [
+                          "Engineered for the ",
+                          (0, r.jsx)("span", {
+                            className: "gradient-text",
+                            children: "Future",
+                          }),
+                        ],
+                      }),
+                      (0, r.jsx)(b.P.p, {
+                        initial: { opacity: 0, y: 20 },
+                        whileInView: { opacity: 1, y: 0 },
+                        viewport: { once: !0 },
+                        transition: { delay: 0.2 },
+                        className: "text-lg text-muted-foreground",
+                        children:
+                          "Experience the perfect blend of performance, technology, and sustainability in every ride.",
+                      }),
+                    ],
+                  }),
+                  (0, r.jsx)(b.P.div, {
+                    variants: P,
+                    initial: "hidden",
+                    whileInView: "visible",
+                    viewport: { once: !0, margin: "-50px" },
+                    className: "grid grid-cols-1 md:grid-cols-3 gap-6",
+                    children: C.map((e, t) =>
+                      (0, r.jsxs)(
+                        b.P.div,
+                        {
+                          variants: F,
+                          whileHover: { y: -5 },
+                          className:
+                            "\n                group relative p-8 rounded-3xl overflow-hidden\n                "
+                              .concat(e.colSpan, "\n                ")
+                              .concat(
+                                e.highlight
+                                  ? "bg-white border-primary/20 shadow-md"
+                                  : "bg-white/60",
+                                "\n                ",
+                              )
+                              .concat(
+                                e.hasGradient
+                                  ? "bg-gradient-to-br from-white to-gray-50"
+                                  : "",
+                                "\n                border border-gray-100 hover:border-primary/20 transition-all duration-300 shadow-sm hover:shadow-lg\n              ",
+                              ),
+                          style: e.bgImage
+                            ? {
+                                backgroundImage: e.bgImage,
+                                backgroundSize: "cover",
+                                backgroundPosition: "center",
+                              }
+                            : void 0,
+                          children: [
+                            (0, r.jsx)("div", {
+                              className:
+                                "relative z-10 flex flex-col h-full justify-between",
+                              children: (0, r.jsxs)("div", {
+                                className: "mb-6",
+                                children: [
+                                  (0, r.jsx)("div", {
+                                    className:
+                                      "\n                    p-3 rounded-2xl w-fit mb-4\n                    ".concat(
+                                        e.hasGradient || e.bgImage
+                                          ? "bg-white shadow-sm"
+                                          : "bg-secondary/10",
+                                        "\n                  ",
+                                      ),
+                                    children: e.icon,
+                                  }),
+                                  (0, r.jsx)("h3", {
+                                    className:
+                                      "text-2xl font-bold mb-2 text-gray-900",
+                                    children: e.title,
+                                  }),
+                                  (0, r.jsx)("p", {
+                                    className:
+                                      "text-base leading-relaxed text-muted-foreground",
+                                    children: e.description,
+                                  }),
+                                ],
+                              }),
+                            }),
+                            (0, r.jsx)("div", {
+                              className:
+                                "absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300",
+                            }),
+                          ],
+                        },
+                        t,
+                      ),
+                    ),
+                  }),
+                ],
+              }),
+            ],
+          });
+      var M = a(8171);
+      let T = [
+          {
+            year: "2026",
+            title: "AI Assistant",
+            points: [
+              "Voice booking",
+              "Predictive maintenance alerts",
+              "Personalized ride modes",
+            ],
+          },
+          {
+            year: "2026",
+            title: "AR Showroom",
+            points: [
+              "View in your space",
+              "Virtual test rides",
+              "360\xb0 showroom tours",
+            ],
+          },
+          {
+            year: "2027",
+            title: "Battery Swap Network",
+            points: ["2-minute swaps", "1000+ stations", "Pay-per-swap plans"],
+          },
+        ],
+        X = () => {
+          let { toast: e } = (0, M.dj)();
+          return (0, r.jsx)("section", {
+            className:
+              "section-padding bg-gradient-to-br from-background to-primary/5",
+            children: (0, r.jsxs)("div", {
+              className: "container-custom",
+              children: [
+                (0, r.jsxs)(b.P.div, {
+                  initial: { opacity: 0, y: 20 },
+                  whileInView: { opacity: 1, y: 0 },
+                  viewport: { once: !0 },
+                  className: "text-center mb-16",
+                  children: [
+                    (0, r.jsx)("h3", {
+                      className:
+                        "text-lg font-medium text-muted-foreground mb-2",
+                      children: "Future Roadmap",
+                    }),
+                    (0, r.jsxs)("h2", {
+                      className: "text-4xl md:text-5xl font-bold mb-4",
+                      children: [
+                        "The Road ",
+                        (0, r.jsx)("span", {
+                          className: "gradient-text",
+                          children: "Ahead",
+                        }),
+                      ],
+                    }),
+                    (0, r.jsx)("p", {
+                      className:
+                        "text-lg text-muted-foreground max-w-2xl mx-auto",
+                      children:
+                        "Exciting innovations coming to transform your electric mobility experience",
+                    }),
+                  ],
+                }),
+                (0, r.jsx)("div", {
+                  className: "grid md:grid-cols-3 gap-8",
+                  children: T.map((t, a) =>
+                    (0, r.jsxs)(
+                      b.P.div,
+                      {
+                        initial: { opacity: 0, y: 30 },
+                        whileInView: { opacity: 1, y: 0 },
+                        viewport: { once: !0 },
+                        transition: { delay: 0.2 * a },
+                        className:
+                          "glass p-8 rounded-2xl hover:bg-card/50 transition-all group",
+                        children: [
+                          (0, r.jsx)(g.E, {
+                            variant: "secondary",
+                            className: "mb-4",
+                            children: t.year,
+                          }),
+                          (0, r.jsx)("h3", {
+                            className: "text-2xl font-bold mb-6",
+                            children: t.title,
+                          }),
+                          (0, r.jsx)("ul", {
+                            className: "space-y-3 mb-6",
+                            children: t.points.map((e, t) =>
+                              (0, r.jsxs)(
+                                "li",
+                                {
+                                  className:
+                                    "flex items-start text-muted-foreground",
+                                  children: [
+                                    (0, r.jsx)("span", {
+                                      className: "text-primary mr-2",
+                                      children: "•",
+                                    }),
+                                    e,
+                                  ],
+                                },
+                                t,
+                              ),
+                            ),
+                          }),
+                          (0, r.jsx)(l.$, {
+                            variant: "outline",
+                            className: "w-full",
+                            onClick: () => {
+                              var a;
+                              return (
+                                (a = t.title),
+                                void e({
+                                  title: "Notification Set!",
+                                  description: "We'll notify you when ".concat(
+                                    a,
+                                    " launches.",
+                                  ),
+                                })
+                              );
+                            },
+                            children: "Notify Me",
+                          }),
+                        ],
+                      },
+                      a,
+                    ),
+                  ),
+                }),
+              ],
+            }),
+          });
+        };
+      var W = a(1873),
+        q = a(9141),
+        z = a(6983),
+        O = a(4679);
+      let V = [
+          "Mumbai",
+          "Bangalore",
+          "Chennai",
+          "Delhi NCR",
+          "Hyderabad",
+          "Kolkata",
+          "Pune",
+          "Patna",
+          "Jaipur",
+        ],
+        B = () => {
+          let { toast: e } = (0, M.dj)(),
+            [t, a] = (0, s.useState)(!1),
+            [n, i] = (0, s.useState)(!1);
+          return (
+            (0, s.useEffect)(() => {
+              let e = () => {
+                let e = new Date(),
+                  t = new Date(
+                    e.getTime() + 6e4 * e.getTimezoneOffset() + 198e5,
+                  ).getHours();
+                i(t >= 11 && t < 23);
+              };
+              e();
+              let t = setInterval(e, 6e4);
+              return () => clearInterval(t);
+            }, []),
+            (0, r.jsx)("section", {
+              className: "",
+              children: (0, r.jsxs)("div", {
+                className: "container-custom",
+                children: [
+                  (0, r.jsxs)(b.P.div, {
+                    initial: { opacity: 0, y: 20 },
+                    whileInView: { opacity: 1, y: 0 },
+                    viewport: { once: !0 },
+                    className: "text-center mb-12",
+                    children: [
+                      (0, r.jsx)("h2", {
+                        className: "text-3xl md:text-4xl font-bold mb-4",
+                        children: "Come on over. Meet us",
+                      }),
+                      (0, r.jsxs)("p", {
+                        className: "text-xl md:text-2xl font-semibold mb-2",
+                        children: [
+                          "Select City ",
+                          (0, r.jsx)("span", {
+                            className: "gradient-text",
+                            children: "AERIX ENERGY",
+                          }),
+                          " Stores.",
+                        ],
+                      }),
+                      (0, r.jsx)("p", {
+                        className: "text-base text-muted-foreground",
+                        children:
+                          "Because nothing beats a one on one with the S1.",
+                      }),
+                    ],
+                  }),
+                  (0, r.jsx)("div", {
+                    className:
+                      "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-4xl mx-auto",
+                    children: V.map((t, s) =>
+                      (0, r.jsxs)(
+                        b.P.button,
+                        {
+                          initial: { opacity: 0, scale: 0.9 },
+                          whileInView: { opacity: 1, scale: 1 },
+                          viewport: { once: !0 },
+                          transition: { delay: 0.1 * s },
+                          onClick: () =>
+                            ((t) => {
+                              if ("Mumbai" === t) return void a(!0);
+                              e({
+                                title: "Coming Soon! \uD83C\uDF89",
+                                description:
+                                  "We're excited to announce that our AERIX ENERGY store in ".concat(
+                                    t,
+                                    " will be opening soon! Stay tuned for updates on our launch date and exclusive opening offers.",
+                                  ),
+                              });
+                            })(t),
+                          className:
+                            "glass p-6 rounded-xl hover:bg-primary/10 hover:border-primary transition-all group text-center",
+                          children: [
+                            (0, r.jsx)(W.A, {
+                              className:
+                                "w-6 h-6 text-primary mx-auto mb-2 group-hover:scale-110 transition-transform",
+                            }),
+                            (0, r.jsx)("span", {
+                              className: "font-medium",
+                              children: t,
+                            }),
+                          ],
+                        },
+                        t,
+                      ),
+                    ),
+                  }),
+                  (0, r.jsx)(b.P.p, {
+                    initial: { opacity: 0 },
+                    whileInView: { opacity: 1 },
+                    viewport: { once: !0 },
+                    className: "text-center text-sm text-muted-foreground mt-8",
+                    children: "More about AERIX ENERGY Stores",
+                  }),
+                  (0, r.jsx)(O.lG, {
+                    open: t,
+                    onOpenChange: a,
+                    children: (0, r.jsxs)(O.Cf, {
+                      className:
+                        "sm:max-w-md border-primary/20 bg-background/95 backdrop-blur-xl",
+                      children: [
+                        (0, r.jsxs)(O.c7, {
+                          children: [
+                            (0, r.jsxs)(O.L3, {
+                              className:
+                                "text-2xl font-bold flex items-center gap-2",
+                              children: [
+                                (0, r.jsx)("div", {
+                                  className: "p-2 rounded-full bg-primary/10",
+                                  children: (0, r.jsx)(W.A, {
+                                    className: "text-primary w-5 h-5",
+                                  }),
+                                }),
+                                (0, r.jsx)("span", {
+                                  children: "Mumbai Store",
+                                }),
+                              ],
+                            }),
+                            (0, r.jsx)(O.rr, {
+                              className: "text-base",
+                              children:
+                                "Experience the future of riding at our Ulhasnagar center",
+                            }),
+                          ],
+                        }),
+                        (0, r.jsxs)("div", {
+                          className: "space-y-6 py-4",
+                          children: [
+                            (0, r.jsxs)("div", {
+                              className:
+                                "relative overflow-hidden rounded-xl border border-primary/10 bg-secondary/5 p-6 hover:bg-secondary/10 transition-colors",
+                              children: [
+                                (0, r.jsxs)("div", {
+                                  className: "flex items-start gap-4 mb-6",
+                                  children: [
+                                    (0, r.jsx)("div", {
+                                      className:
+                                        "p-2 rounded-lg bg-primary/5 shrink-0",
+                                      children: (0, r.jsx)(W.A, {
+                                        className: "w-5 h-5 text-primary",
+                                      }),
+                                    }),
+                                    (0, r.jsxs)("div", {
+                                      children: [
+                                        (0, r.jsx)("h4", {
+                                          className:
+                                            "font-semibold text-lg mb-1",
+                                          children:
+                                            "Ulhasnagar Experience Center",
+                                        }),
+                                        (0, r.jsxs)("p", {
+                                          className:
+                                            "text-muted-foreground leading-relaxed",
+                                          children: [
+                                            "Shop No 545, Main Road, O.T Section,",
+                                            (0, r.jsx)("br", {}),
+                                            "OPP Geeta Medical,",
+                                            (0, r.jsx)("br", {}),
+                                            "Ulhasnagar, Maharashtra 421004",
+                                          ],
+                                        }),
+                                      ],
+                                    }),
+                                  ],
+                                }),
+                                (0, r.jsxs)("div", {
+                                  className: "grid grid-cols-2 gap-4 mb-6",
+                                  children: [
+                                    (0, r.jsxs)("div", {
+                                      className:
+                                        "flex items-center gap-3 p-3 rounded-lg bg-background/50 border border-border/50",
+                                      children: [
+                                        (0, r.jsx)(q.A, {
+                                          className: "w-4 h-4 text-primary",
+                                        }),
+                                        (0, r.jsx)("span", {
+                                          className: "text-sm font-medium",
+                                          children: "+91 7770000597",
+                                        }),
+                                      ],
+                                    }),
+                                    (0, r.jsxs)("div", {
+                                      className:
+                                        "flex items-center gap-3 p-3 rounded-lg bg-background/50 border border-border/50",
+                                      children: [
+                                        (0, r.jsx)(z.A, {
+                                          className: "w-4 h-4 text-primary",
+                                        }),
+                                        (0, r.jsx)("span", {
+                                          className: "text-sm font-medium",
+                                          children: "11:00 AM - 11:00 PM",
+                                        }),
+                                      ],
+                                    }),
+                                  ],
+                                }),
+                              ],
+                            }),
+                            (0, r.jsxs)("div", {
+                              className:
+                                "flex items-center justify-between px-2 text-sm text-muted-foreground",
+                              children: [
+                                (0, r.jsxs)("div", {
+                                  className: "flex items-center gap-2",
+                                  children: [
+                                    (0, r.jsx)("div", {
+                                      className:
+                                        "w-2 h-2 rounded-full animate-pulse ".concat(
+                                          n ? "bg-green-500" : "bg-red-500",
+                                        ),
+                                    }),
+                                    (0, r.jsx)("span", {
+                                      children: n ? "Open Now" : "Closed",
+                                    }),
+                                  ],
+                                }),
+                                (0, r.jsx)("span", { children: "Mon - Sun" }),
+                              ],
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                  }),
+                ],
+              }),
+            })
+          );
+        };
+      var D = a(6083),
+        G = a(4033),
+        U = a(5016);
+      let Y = D.bL,
+        $ = s.forwardRef((e, t) => {
+          let { className: a, ...s } = e;
+          return (0, r.jsx)(D.q7, {
+            ref: t,
+            className: (0, U.cn)("border-b", a),
+            ...s,
+          });
+        });
+      $.displayName = "AccordionItem";
+      let H = s.forwardRef((e, t) => {
+        let { className: a, children: s, ...n } = e;
+        return (0, r.jsx)(D.Y9, {
+          className: "flex",
+          children: (0, r.jsxs)(D.l9, {
+            ref: t,
+            className: (0, U.cn)(
+              "flex flex-1 items-center justify-between py-4 font-medium transition-all hover:underline [&[data-state=open]>svg]:rotate-180",
+              a,
+            ),
+            ...n,
+            children: [
+              s,
+              (0, r.jsx)(G.A, {
+                className: "h-4 w-4 shrink-0 transition-transform duration-200",
+              }),
+            ],
+          }),
+        });
+      });
+      H.displayName = D.l9.displayName;
+      let J = s.forwardRef((e, t) => {
+        let { className: a, children: s, ...n } = e;
+        return (0, r.jsx)(D.UC, {
+          ref: t,
+          className:
+            "overflow-hidden text-sm transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down",
+          ...n,
+          children: (0, r.jsx)("div", {
+            className: (0, U.cn)("pb-4 pt-0", a),
+            children: s,
+          }),
+        });
+      });
+      J.displayName = D.UC.displayName;
+      let K = [
+          {
+            question: "What is the real-world range of Aerix scooters?",
+            answer:
+              "Our scooters offer 110 KM real-world range on a single charge under normal riding conditions. Range may vary based on riding style, terrain, weather, and load.",
+          },
+          {
+            question: "How long does it take to charge the battery?",
+            answer:
+              "Standard charging takes 4-5 hours for a full charge. With our fast charger, you can get 80% charge in just 45 minutes.",
+          },
+          {
+            question: "What warranty do you offer?",
+            answer:
+              "We offer an industry-leading 1-year/80,000 km warranty on the battery pack and 3 years on the vehicle. Extended warranty options are also available.",
+          },
+          {
+            question: "Are there any government subsidies available?",
+            answer:
+              "Yes! Under the FAME II scheme, you can avail up to ₹15,000 subsidy. State-specific subsidies may also apply. Our team will help you with all documentation.",
+          },
+          {
+            question: "How do I book a test ride?",
+            answer:
+              "Simply click the 'Book Test Ride' button, select your nearest dealer, choose a convenient time slot, and we'll confirm your booking within 24 hours.",
+          },
+          {
+            question: "What are the financing options?",
+            answer:
+              "We partner with leading banks and NBFCs to offer flexible financing starting at ₹3,999/month. Zero down payment and instant approval available for eligible customers.",
+          },
+        ],
+        Q = () =>
+          (0, r.jsx)("section", {
+            className: "section-padding",
+            children: (0, r.jsxs)("div", {
+              className: "container-custom max-w-4xl",
+              children: [
+                (0, r.jsxs)(b.P.div, {
+                  initial: { opacity: 0, y: 30 },
+                  whileInView: { opacity: 1, y: 0 },
+                  viewport: { once: !0 },
+                  className: "text-center mb-16",
+                  children: [
+                    (0, r.jsxs)("h2", {
+                      className: "text-4xl md:text-5xl font-bold mb-4",
+                      children: [
+                        "Frequently Asked ",
+                        (0, r.jsx)("span", {
+                          className: "gradient-text",
+                          children: "Questions",
+                        }),
+                      ],
+                    }),
+                    (0, r.jsx)("p", {
+                      className: "text-lg text-muted-foreground",
+                      children:
+                        "Everything you need to know about Aerix electric scooters",
+                    }),
+                  ],
+                }),
+                (0, r.jsx)(b.P.div, {
+                  initial: { opacity: 0, y: 30 },
+                  whileInView: { opacity: 1, y: 0 },
+                  viewport: { once: !0 },
+                  transition: { delay: 0.2 },
+                  children: (0, r.jsx)(Y, {
+                    type: "single",
+                    collapsible: !0,
+                    className: "space-y-4",
+                    children: K.map((e, t) =>
+                      (0, r.jsxs)(
+                        $,
+                        {
+                          value: "item-".concat(t),
+                          className: "glass rounded-lg px-6 border-border",
+                          children: [
+                            (0, r.jsx)(H, {
+                              className: "text-left hover:text-primary",
+                              children: e.question,
+                            }),
+                            (0, r.jsx)(J, {
+                              className: "text-muted-foreground",
+                              children: e.answer,
+                            }),
+                          ],
+                        },
+                        t,
+                      ),
+                    ),
+                  }),
+                }),
+              ],
+            }),
+          });
+      var Z = a(3664),
+        ee = a(5917),
+        et = a(6170),
+        ea = a(8720);
+      let er = () => {
+        let [e, t] = (0, s.useState)(""),
+          [a, n] = (0, s.useState)(!1);
+        return (0, r.jsx)("section", {
+          className: "",
+          children: (0, r.jsx)("div", {
+            className: "container-custom",
+            children: (0, r.jsxs)(b.P.div, {
+              initial: { opacity: 0, y: 30 },
+              whileInView: { opacity: 1, y: 0 },
+              viewport: { once: !0 },
+              className:
+                "glass rounded-3xl p-8 md:p-12 lg:p-16 relative overflow-hidden",
+              children: [
+                (0, r.jsx)("div", {
+                  className:
+                    "absolute inset-0 bg-gradient-to-r from-primary/20 to-secondary/20 opacity-30",
+                }),
+                (0, r.jsxs)("div", {
+                  className:
+                    "relative z-10 max-w-3xl mx-auto text-center space-y-8",
+                  children: [
+                    (0, r.jsxs)("div", {
+                      children: [
+                        (0, r.jsxs)("h2", {
+                          className: "text-4xl md:text-5xl font-bold mb-4",
+                          children: [
+                            "Stay ",
+                            (0, r.jsx)("span", {
+                              className: "gradient-text",
+                              children: "Connected",
+                            }),
+                          ],
+                        }),
+                        (0, r.jsx)("p", {
+                          className: "text-lg text-muted-foreground",
+                          children:
+                            "Get the latest updates on new models, exclusive offers, and EV insights delivered to your inbox.",
+                        }),
+                      ],
+                    }),
+                    (0, r.jsxs)("form", {
+                      onSubmit: (a) => {
+                        (a.preventDefault(),
+                          e &&
+                            (n(!0),
+                            ea.oR.success(
+                              "Successfully subscribed to our newsletter!",
+                            ),
+                            t(""),
+                            setTimeout(() => n(!1), 3e3)));
+                      },
+                      className:
+                        "flex flex-col sm:flex-row gap-4 max-w-xl mx-auto",
+                      children: [
+                        (0, r.jsxs)("div", {
+                          className: "flex-1 relative",
+                          children: [
+                            (0, r.jsx)(Z.A, {
+                              className:
+                                "absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-muted-foreground",
+                            }),
+                            (0, r.jsx)(et.p, {
+                              type: "email",
+                              placeholder: "Enter your email",
+                              value: e,
+                              onChange: (e) => t(e.target.value),
+                              className: "pl-12 h-12 bg-background/50",
+                              required: !0,
+                            }),
+                          ],
+                        }),
+                        (0, r.jsx)(l.$, {
+                          type: "submit",
+                          size: "lg",
+                          className: "sm:w-auto",
+                          children: a
+                            ? (0, r.jsxs)(r.Fragment, {
+                                children: [
+                                  (0, r.jsx)(ee.A, {
+                                    className: "w-5 h-5 mr-2",
+                                  }),
+                                  "Subscribed",
+                                ],
+                              })
+                            : "Subscribe",
+                        }),
+                      ],
+                    }),
+                    (0, r.jsxs)("div", {
+                      className:
+                        "flex flex-wrap justify-center gap-6 text-sm text-muted-foreground",
+                      children: [
+                        (0, r.jsxs)("div", {
+                          className: "flex items-center gap-2",
+                          children: [
+                            (0, r.jsx)(ee.A, {
+                              className: "w-4 h-4 text-primary",
+                            }),
+                            (0, r.jsx)("span", {
+                              children: "Exclusive Launch Updates",
+                            }),
+                          ],
+                        }),
+                        (0, r.jsxs)("div", {
+                          className: "flex items-center gap-2",
+                          children: [
+                            (0, r.jsx)(ee.A, {
+                              className: "w-4 h-4 text-primary",
+                            }),
+                            (0, r.jsx)("span", { children: "Special Offers" }),
+                          ],
+                        }),
+                        (0, r.jsxs)("div", {
+                          className: "flex items-center gap-2",
+                          children: [
+                            (0, r.jsx)(ee.A, {
+                              className: "w-4 h-4 text-primary",
+                            }),
+                            (0, r.jsx)("span", {
+                              children: "EV Tips & Tricks",
+                            }),
+                          ],
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              ],
+            }),
+          }),
+        });
+      };
+      var es = a(3397),
+        en = a(7650),
+        ei = a(5229),
+        el = a(5299),
+        eo = a(235),
+        ec = a(7507),
+        ed = a(4916);
+      let em = (e) => {
+        let { isOpen: t, onClose: a } = e,
+          { toast: n } = (0, M.dj)(),
+          [i, o] = (0, s.useState)(!1),
+          [c, d] = (0, s.useState)({
+            name: "",
+            phone: "",
+            email: "",
+            product: "",
+            pincode: "",
+            whatsapp: !1,
+            honeypot: "",
+          }),
+          m = async (e) => {
+            if (
+              (e.preventDefault(),
+              c.name.trim().length < 2
+                ? (n({
+                    title: "Invalid Name",
+                    description: "Please enter your full name.",
+                  }),
+                  !1)
+                : /^[\+]?[1-9][\d]{9,14}$/.test(c.phone)
+                  ? /^\S+@\S+\.\S+$/.test(c.email)
+                    ? c.product
+                      ? !!/^\d{5,6}$/.test(c.pincode) ||
+                        (n({
+                          title: "Invalid Pincode",
+                          description: "Please enter a valid pincode.",
+                        }),
+                        !1)
+                      : (n({
+                          title: "Select Product",
+                          description: "Please choose a vehicle category.",
+                        }),
+                        !1)
+                    : (n({
+                        title: "Invalid Email",
+                        description: "Please enter a valid email address.",
+                      }),
+                      !1)
+                  : (n({
+                      title: "Invalid Phone Number",
+                      description: "Enter a valid phone number.",
+                    }),
+                    !1))
+            ) {
+              o(!0);
+              try {
+                let e = {
+                    type: "interest",
+                    name: c.name,
+                    phone: c.phone,
+                    email: c.email,
+                    product: c.product,
+                    pincode: c.pincode,
+                    whatsapp: c.whatsapp,
+                    honeypot: c.honeypot,
+                  },
+                  t = await fetch(
+                    "".concat("http://localhost:3001", "/api/email/send"),
+                    {
+                      method: "POST",
+                      headers: { "Content-Type": "application/json" },
+                      body: JSON.stringify(e),
+                    },
+                  ),
+                  r = await t.json();
+                if (!t.ok) {
+                  (n({
+                    title: "Failed",
+                    description: r.message || "Unable to submit.",
+                  }),
+                    o(!1));
+                  return;
+                }
+                (n({
+                  title: "Thank you for your interest!",
+                  description: "We have emailed you the confirmation.",
+                }),
+                  localStorage.setItem(
+                    "aerixenergy-interest-submitted",
+                    "true",
+                  ),
+                  d({
+                    name: "",
+                    phone: "",
+                    email: "",
+                    product: "",
+                    pincode: "",
+                    whatsapp: !1,
+                    honeypot: "",
+                  }),
+                  a());
+              } catch (e) {
+                n({
+                  title: "Error",
+                  description: "Something went wrong. Try again.",
+                });
+              } finally {
+                o(!1);
+              }
+            }
+          };
+        return ((0, s.useEffect)(() => {
+          let e = (e) => {
+            "Escape" === e.key && a();
+          };
+          if (t) {
+            document.addEventListener("keydown", e);
+            let t = window.scrollY;
+            ((document.body.style.position = "fixed"),
+              (document.body.style.top = "-".concat(t, "px")),
+              (document.body.style.width = "100%"));
+          }
+          return () => {
+            if ((document.removeEventListener("keydown", e), t)) {
+              let e = document.body.style.top;
+              ((document.body.style.position = ""),
+                (document.body.style.top = ""),
+                (document.body.style.width = ""),
+                window.scrollTo(0, -1 * parseInt(e || "0")));
+            }
+          };
+        }, [t, a]),
+        t)
+          ? (0, en.createPortal)(
+              (0, r.jsx)("div", {
+                className:
+                  "fixed inset-0 z-[99999] flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm overflow-hidden",
+                children: (0, r.jsxs)("div", {
+                  className:
+                    "glass rounded-2xl w-full max-w-md max-h-[90vh] overflow-y-auto",
+                  children: [
+                    (0, r.jsxs)("div", {
+                      className:
+                        "glass border-b border-border px-6 py-4 flex items-center justify-between",
+                      children: [
+                        (0, r.jsx)("h2", {
+                          className: "text-xl font-bold",
+                          children:
+                            "Are you interested in getting an Aerix Energy Product?",
+                        }),
+                        (0, r.jsx)("button", {
+                          onClick: a,
+                          className:
+                            "text-muted-foreground hover:text-foreground",
+                          children: (0, r.jsx)(ei.A, { size: 24 }),
+                        }),
+                      ],
+                    }),
+                    (0, r.jsxs)("form", {
+                      onSubmit: m,
+                      className: "p-6 space-y-4",
+                      children: [
+                        (0, r.jsx)("input", {
+                          type: "text",
+                          value: c.honeypot,
+                          onChange: (e) =>
+                            d({ ...c, honeypot: e.target.value }),
+                          className: "hidden",
+                          autoComplete: "off",
+                          tabIndex: -1,
+                        }),
+                        (0, r.jsxs)("div", {
+                          children: [
+                            (0, r.jsx)(eo.J, { children: "Name" }),
+                            (0, r.jsx)(et.p, {
+                              placeholder: "Your name",
+                              value: c.name,
+                              onChange: (e) =>
+                                d({ ...c, name: e.target.value }),
+                              required: !0,
+                            }),
+                          ],
+                        }),
+                        (0, r.jsxs)("div", {
+                          children: [
+                            (0, r.jsx)(eo.J, { children: "Phone Number" }),
+                            (0, r.jsx)(et.p, {
+                              type: "tel",
+                              placeholder: "+91 98765 43210",
+                              value: c.phone,
+                              onChange: (e) =>
+                                d({ ...c, phone: e.target.value }),
+                              required: !0,
+                            }),
+                          ],
+                        }),
+                        (0, r.jsxs)("div", {
+                          children: [
+                            (0, r.jsx)(eo.J, { children: "Email" }),
+                            (0, r.jsx)(et.p, {
+                              type: "email",
+                              placeholder: "your.email@example.com",
+                              value: c.email,
+                              onChange: (e) =>
+                                d({ ...c, email: e.target.value }),
+                              required: !0,
+                            }),
+                          ],
+                        }),
+                        (0, r.jsxs)("div", {
+                          children: [
+                            (0, r.jsx)(eo.J, {
+                              children: "Product interested in",
+                            }),
+                            (0, r.jsxs)(ec.l6, {
+                              value: c.product,
+                              onValueChange: (e) => d({ ...c, product: e }),
+                              required: !0,
+                              children: [
+                                (0, r.jsx)(ec.bq, {
+                                  children: (0, r.jsx)(ec.yv, {
+                                    placeholder: "Select Product",
+                                  }),
+                                }),
+                                (0, r.jsxs)(ec.gC, {
+                                  children: [
+                                    (0, r.jsx)(ec.eb, {
+                                      value: "Aerix Ninja Mini",
+                                      children: "Aerix Ninja Mini",
+                                    }),
+                                    (0, r.jsx)(ec.eb, {
+                                      value: "Aerix Sharvil",
+                                      children: "Aerix Sharvil",
+                                    }),
+                                    (0, r.jsx)(ec.eb, {
+                                      value: "Aerix Wolf 2.0",
+                                      children: "Aerix Wolf 2.0",
+                                    }),
+                                    (0, r.jsx)(ec.eb, {
+                                      value: "AERIX RANGER",
+                                      children: "AERIX RANGER",
+                                    }),
+                                    (0, r.jsx)(ec.eb, {
+                                      value: "Aerix GTR++",
+                                      children: "Aerix GTR++",
+                                    }),
+                                    (0, r.jsx)(ec.eb, {
+                                      value: "Aerix Aurra Pro",
+                                      children: "Aerix Aurra Pro",
+                                    }),
+                                    (0, r.jsx)(ec.eb, {
+                                      value: "Aerix Loader",
+                                      children: "Aerix Loader",
+                                    }),
+                                  ],
+                                }),
+                              ],
+                            }),
+                          ],
+                        }),
+                        (0, r.jsxs)("div", {
+                          children: [
+                            (0, r.jsx)(eo.J, { children: "Pincode" }),
+                            (0, r.jsx)(et.p, {
+                              placeholder: "Enter your pincode",
+                              value: c.pincode,
+                              onChange: (e) =>
+                                d({ ...c, pincode: e.target.value }),
+                              required: !0,
+                            }),
+                          ],
+                        }),
+                        (0, r.jsxs)("div", {
+                          className: "flex items-center space-x-2",
+                          children: [
+                            (0, r.jsx)(ed.S, {
+                              checked: c.whatsapp,
+                              onCheckedChange: (e) => d({ ...c, whatsapp: e }),
+                            }),
+                            (0, r.jsx)(eo.J, {
+                              className: "cursor-pointer",
+                              children: "Get updates on WhatsApp",
+                            }),
+                          ],
+                        }),
+                        (0, r.jsx)(l.$, {
+                          type: "submit",
+                          size: "lg",
+                          className: "w-full",
+                          disabled: i,
+                          children: i
+                            ? (0, r.jsxs)(r.Fragment, {
+                                children: [
+                                  (0, r.jsx)(el.A, {
+                                    className: "mr-2 h-4 w-4 animate-spin",
+                                  }),
+                                  "Submitting...",
+                                ],
+                              })
+                            : "Proceed",
+                        }),
+                      ],
+                    }),
+                  ],
+                }),
+              }),
+              document.body,
+            )
+          : null;
+      };
+      function eu() {
+        let [e, t] = (0, s.useState)(!1);
+        return (
+          (0, s.useEffect)(() => {
+            if (
+              "true" !== localStorage.getItem("aerix-energy-interest-submitted")
+            ) {
+              let e = setTimeout(() => {
+                t(!0);
+              }, 1e4);
+              return () => clearTimeout(e);
+            }
+          }, []),
+          (0, r.jsxs)("div", {
+            className: "min-h-screen bg-[#F8F9FA]",
+            children: [
+              (0, r.jsx)(n.A, {}),
+              (0, r.jsxs)("main", {
+                children: [
+                  (0, r.jsx)(h, {}),
+                  (0, r.jsx)(A, {}),
+                  (0, r.jsx)(L, {}),
+                  (0, r.jsx)(X, {}),
+                  (0, r.jsx)(B, {}),
+                  (0, r.jsx)(Q, {}),
+                  (0, r.jsx)(er, {}),
+                ],
+              }),
+              (0, r.jsx)(es.A, {}),
+              (0, r.jsx)(em, { isOpen: e, onClose: () => t(!1) }),
+            ],
+          })
+        );
+      }
+    },
+  },
+  (e) => {
+    (e.O(0, [459, 182, 691, 921, 441, 255, 358], () => e((e.s = 9198))),
+      (_N_E = e.O()));
+  },
+]);

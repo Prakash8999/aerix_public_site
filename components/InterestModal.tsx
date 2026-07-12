@@ -36,27 +36,42 @@ const InterestModal = ({ isOpen, onClose }: InterestModalProps) => {
   // ------------ VALIDATION ------------
   const validate = () => {
     if (formData.name.trim().length < 2) {
-      toast({ title: "Invalid Name", description: "Please enter your full name." });
+      toast({
+        title: "Invalid Name",
+        description: "Please enter your full name.",
+      });
       return false;
     }
 
     if (!/^[\+]?[1-9][\d]{9,14}$/.test(formData.phone)) {
-      toast({ title: "Invalid Phone Number", description: "Enter a valid phone number." });
+      toast({
+        title: "Invalid Phone Number",
+        description: "Enter a valid phone number.",
+      });
       return false;
     }
 
     if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
-      toast({ title: "Invalid Email", description: "Please enter a valid email address." });
+      toast({
+        title: "Invalid Email",
+        description: "Please enter a valid email address.",
+      });
       return false;
     }
 
     if (!formData.product) {
-      toast({ title: "Select Product", description: "Please choose a vehicle category." });
+      toast({
+        title: "Select Product",
+        description: "Please choose a vehicle category.",
+      });
       return false;
     }
 
     if (!/^\d{5,6}$/.test(formData.pincode)) {
-      toast({ title: "Invalid Pincode", description: "Please enter a valid pincode." });
+      toast({
+        title: "Invalid Pincode",
+        description: "Please enter a valid pincode.",
+      });
       return false;
     }
 
@@ -82,16 +97,22 @@ const InterestModal = ({ isOpen, onClose }: InterestModalProps) => {
         honeypot: formData.honeypot,
       };
 
-      const res = await fetch(`${process.env.NEXT_PUBLIC_EMAIL_API}/api/email/send`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_EMAIL_API}/api/email/send`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        },
+      );
 
       const data = await res.json();
 
       if (!res.ok) {
-        toast({ title: "Failed", description: data.message || "Unable to submit." });
+        toast({
+          title: "Failed",
+          description: data.message || "Unable to submit.",
+        });
         setLoading(false);
         return;
       }
@@ -115,7 +136,10 @@ const InterestModal = ({ isOpen, onClose }: InterestModalProps) => {
 
       onClose();
     } catch (err) {
-      toast({ title: "Error", description: "Something went wrong. Try again." });
+      toast({
+        title: "Error",
+        description: "Something went wrong. Try again.",
+      });
     } finally {
       setLoading(false);
     }
@@ -158,7 +182,10 @@ const InterestModal = ({ isOpen, onClose }: InterestModalProps) => {
           <h2 className="text-xl font-bold">
             Are you interested in getting an Aerix Energy Product?
           </h2>
-          <button onClick={onClose} className="text-muted-foreground hover:text-foreground">
+          <button
+            onClick={onClose}
+            className="text-muted-foreground hover:text-foreground"
+          >
             <X size={24} />
           </button>
         </div>
@@ -168,7 +195,9 @@ const InterestModal = ({ isOpen, onClose }: InterestModalProps) => {
           <input
             type="text"
             value={formData.honeypot}
-            onChange={(e) => setFormData({ ...formData, honeypot: e.target.value })}
+            onChange={(e) =>
+              setFormData({ ...formData, honeypot: e.target.value })
+            }
             className="hidden"
             autoComplete="off"
             tabIndex={-1}
@@ -180,7 +209,9 @@ const InterestModal = ({ isOpen, onClose }: InterestModalProps) => {
             <Input
               placeholder="Your name"
               value={formData.name}
-              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, name: e.target.value })
+              }
               required
             />
           </div>
@@ -192,7 +223,9 @@ const InterestModal = ({ isOpen, onClose }: InterestModalProps) => {
               type="tel"
               placeholder="+91 7770000597"
               value={formData.phone}
-              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, phone: e.target.value })
+              }
               required
             />
           </div>
@@ -204,7 +237,9 @@ const InterestModal = ({ isOpen, onClose }: InterestModalProps) => {
               type="email"
               placeholder="your.email@example.com"
               value={formData.email}
-              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, email: e.target.value })
+              }
               required
             />
           </div>
@@ -214,20 +249,22 @@ const InterestModal = ({ isOpen, onClose }: InterestModalProps) => {
             <Label>Product interested in</Label>
             <Select
               value={formData.product}
-              onValueChange={(value) => setFormData({ ...formData, product: value })}
+              onValueChange={(value) =>
+                setFormData({ ...formData, product: value })
+              }
               required
             >
               <SelectTrigger>
                 <SelectValue placeholder="Select Product" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="AERIX ENDURO">AERIX ENDURO</SelectItem>
-                <SelectItem value="AERIX GLIDE">AERIX GLIDE</SelectItem>
-                <SelectItem value="AERIX PRIME">AERIX PRIME</SelectItem>
+                <SelectItem value="Aerix Ninja Mini">Aerix Ninja Mini</SelectItem>
+                <SelectItem value="Aerix Sharvil">Aerix Sharvil</SelectItem>
+                <SelectItem value="Aerix Wolf 2.0">Aerix Wolf 2.0</SelectItem>
                 <SelectItem value="AERIX RANGER">AERIX RANGER</SelectItem>
-                <SelectItem value="AERIX URBAN">AERIX URBAN</SelectItem>
-                <SelectItem value="AERIX TITAN">AERIX TITAN</SelectItem>
-                <SelectItem value="AERIX VOLT">AERIX VOLT</SelectItem>
+                <SelectItem value="Aerix GTR++">Aerix GTR++</SelectItem>
+                <SelectItem value="Aerix Aurra Pro">Aerix Aurra Pro</SelectItem>
+                <SelectItem value="Aerix Loader">Aerix Loader</SelectItem>
               </SelectContent>
             </Select>
           </div>
@@ -238,7 +275,9 @@ const InterestModal = ({ isOpen, onClose }: InterestModalProps) => {
             <Input
               placeholder="Enter your pincode"
               value={formData.pincode}
-              onChange={(e) => setFormData({ ...formData, pincode: e.target.value })}
+              onChange={(e) =>
+                setFormData({ ...formData, pincode: e.target.value })
+              }
               required
             />
           </div>
@@ -268,7 +307,7 @@ const InterestModal = ({ isOpen, onClose }: InterestModalProps) => {
         </form>
       </div>
     </div>,
-    document.body
+    document.body,
   );
 };
 

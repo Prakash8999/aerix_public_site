@@ -6,25 +6,31 @@ import { cn } from "@/lib/utils";
 import { motion, AnimatePresence } from "framer-motion";
 
 const ORIG_IMAGES = [
-  "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_prime_orange_large.png", // 5
-  "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_glide_blue_large.png", // 1
-  "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_titan_white_large.png", // 0
-  "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_volt_black_large.png", // 3
-  "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_urban_grey_large.png", // 2
+  "https://cdn.aerixenergy.com/images/695896c6-de4c-41d3-9383-b2b8939d1cff.png", // 5
+  "https://cdn.aerixenergy.com/images/ad99a205-a999-4c1e-bc13-78f3111a6196.png",  // 1
+  "https://cdn.aerixenergy.com/images/6ab1dd25-fd5e-4f7f-8aca-3705358a5d0c.png", // 0
+  "https://cdn.aerixenergy.com/images/99ee50b0-679f-4467-b51d-c93f43b92032.png", // 3
+  "https://cdn.aerixenergy.com/images/f81a6704-ecf7-4629-9cc3-cdda5fff7242.png", // 2
   "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_range_black_large.png", // 4
 ];
 
 const MOBILE_IMAGE_MAP: Record<string, string> = {
-  "aerix_prime_orange_large.png": "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_prime_orange_small.png",
-  "aerix_glide_blue_large.png": "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_glide_blue_small.png",
-  "aerix_titan_white_large.png": "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_titan_white_small.png",
-  "aerix_volt_black_large.png": "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_volt_black_small.png",
-  "aerix_urban_grey_large.png": "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_urban_grey_small.png",
-  "aerix_range_black_large.png": "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_ranger_black_small.png"
+  "aerix_prime_orange_large.png":
+    "https://cdn.aerixenergy.com/images/695896c6-de4c-41d3-9383-b2b8939d1cff.png",
+  "aerix_glide_blue_large.png":
+    "https://cdn.aerixenergy.com/images/ad99a205-a999-4c1e-bc13-78f3111a6196.png",
+  "aerix_titan_white_large.png":
+    "https://cdn.aerixenergy.com/images/6ab1dd25-fd5e-4f7f-8aca-3705358a5d0c.png",
+  "aerix_volt_black_large.png":
+    "https://cdn.aerixenergy.com/images/99ee50b0-679f-4467-b51d-c93f43b92032.png",
+  "aerix_urban_grey_large.png":
+    "https://cdn.aerixenergy.com/images/f81a6704-ecf7-4629-9cc3-cdda5fff7242.png",
+  "aerix_range_black_large.png":
+    "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_range_black_large.png",
 };
 
 const getMobileSrc = (desktopSrc: string) => {
-  const filename = desktopSrc.split('/').pop()?.split('?')[0];
+  const filename = desktopSrc.split("/").pop()?.split("?")[0];
   if (!filename) return desktopSrc;
   return MOBILE_IMAGE_MAP[filename] || desktopSrc;
 };
@@ -34,61 +40,62 @@ const ORIG_DATA = [
     title: "Smooth Electric Performance",
     subtitle: "BLDC hub motor built for effortless city rides.",
     metric: { value: "45 km/h", label: "Top Speed" },
-    modelName: "AERIX PRIME",
-    color: "Orange"
+    modelName: "Aerix Wolf 2.0",
+    color: "Orange",
   },
   {
     title: "Aerodynamic Design",
     subtitle: "Sculpted panels for stability and efficiency.",
     metric: { value: "Optimized", label: "Airflow Design" },
-    modelName: "AERIX GLIDE",
-    color: "Peacock Blue"
+    modelName: "Aerix Sharvil",
+    color: "Peacock Blue",
   },
   {
     title: "Smart Connectivity",
     subtitle: "Your scooter, connected to your world.",
     metric: { value: "Smart", label: "Connected Tech" },
-    modelName: "AERIX TITAN",
-    color: "White"
+    modelName: "Aerix Aurra Pro",
+    color: "White",
   },
   {
     title: "All-Weather Build",
     subtitle: "IP67 rated. Ready for any season.",
     metric: { value: "IP67", label: "Water & Dust Rating" },
-    modelName: "AERIX VOLT",
-    color: "Black"
+    modelName: "Aerix Loader",
+    color: "Black",
   },
   {
     title: "Limitless Range",
-    subtitle: "Go further with 110km true range.",
-    metric: { value: "110 km", label: "True Range" },
-    modelName: "AERIX URBAN",
-    color: "Grey"
+    subtitle: "Go further with 70km true range.",
+    metric: { value: "70 km", label: "True Range" },
+    modelName: "Aerix GTR++",
+    color: "Grey",
   },
   {
     title: "Future Ready",
     subtitle: "Updates over the air. Always new.",
-    metric: { value: "3 Yr", label: "Battery Warranty" },
+    metric: { value: "1 Yr", label: "Battery Warranty" },
     modelName: "AERIX RANGER",
-    color: "Black"
-  }
+    color: "Black",
+  },
 ];
 
 // Create extended arrays for infinite loop: [Last, ...Originals, First]
 const IMAGES = [
   ORIG_IMAGES[ORIG_IMAGES.length - 1],
   ...ORIG_IMAGES,
-  ORIG_IMAGES[0]
+  ORIG_IMAGES[0],
 ];
 
 const SLIDE_DATA = [
   ORIG_DATA[ORIG_DATA.length - 1],
   ...ORIG_DATA,
-  ORIG_DATA[0]
+  ORIG_DATA[0],
 ];
 
 // Linear interpolation for smooth inertia
-const lerp = (start: number, end: number, factor: number) => start + (end - start) * factor;
+const lerp = (start: number, end: number, factor: number) =>
+  start + (end - start) * factor;
 
 // Easing function for premium feel
 const easeOutCubic = (t: number) => 1 - Math.pow(1 - t, 3);
@@ -97,7 +104,7 @@ const Hero = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
   const [enquiryOpen, setEnquiryOpen] = useState(false);
-  const [selectedModel, setSelectedModel] = useState("AERIX PRIME");
+  const [selectedModel, setSelectedModel] = useState("Aerix Wolf 2.0");
   const [selectedColor, setSelectedColor] = useState("Orange");
   const [activeIndex, setActiveIndex] = useState(0); // This tracks the "Real" index (0-5)
 
@@ -123,8 +130,8 @@ const Hero = () => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
     };
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // Configuration
@@ -161,7 +168,8 @@ const Hero = () => {
 
   useEffect(() => {
     if (trackRef.current) {
-      imageElementsRef.current = trackRef.current.querySelectorAll('.hero-image');
+      imageElementsRef.current =
+        trackRef.current.querySelectorAll(".hero-image");
     }
   }, []);
 
@@ -174,7 +182,11 @@ const Hero = () => {
     const shouldUpdateImages = true;
 
     // 1. Interpolate Horizontal (ALWAYS update for smooth carousel)
-    position.current.current = lerp(position.current.current, position.current.target, EASE);
+    position.current.current = lerp(
+      position.current.current,
+      position.current.target,
+      EASE,
+    );
 
     // 2. Vertical Scroll Physics
     const targetScrollY = window.scrollY;
@@ -182,7 +194,10 @@ const Hero = () => {
 
     // 3. Pinned Hero Interactions
     const scrollRange = window.innerHeight;
-    const rawProgress = Math.min(Math.max(verticalScroll.current / scrollRange, 0), 1);
+    const rawProgress = Math.min(
+      Math.max(verticalScroll.current / scrollRange, 0),
+      1,
+    );
     const progress = easeOutCubic(rawProgress);
 
     // Visual Transformations - STRICTLY VERTICAL ONLY
@@ -193,7 +208,7 @@ const Hero = () => {
     if (heroWrapperRef.current) {
       // Ensure full width availability without reducing frame size
       heroWrapperRef.current.style.clipPath = `inset(0px 0px 0px 0px)`;
-      // User requested "Removal" of wrapper scale. 
+      // User requested "Removal" of wrapper scale.
       heroWrapperRef.current.style.transform = `none`;
     }
 
@@ -201,11 +216,13 @@ const Hero = () => {
     const x = position.current.current;
     const totalRealSlides = ORIG_IMAGES.length; // 6
 
-    if (x >= -0.01) { // Reached absolute start (Fake Last)
+    if (x >= -0.01) {
+      // Reached absolute start (Fake Last)
       const resetX = -(totalRealSlides * width);
       position.current.current = resetX;
       position.current.target = resetX + (position.current.target - x);
-    } else if (x <= -((totalRealSlides + 1) * width) + 0.01) { // Reached absolute end (Fake First)
+    } else if (x <= -((totalRealSlides + 1) * width) + 0.01) {
+      // Reached absolute end (Fake First)
       const resetX = -width;
       position.current.current = resetX;
       position.current.target = resetX + (position.current.target - x);
@@ -230,25 +247,28 @@ const Hero = () => {
       if (shouldUpdateImages) {
         let images = imageElementsRef.current;
         if (!images && trackRef.current) {
-          images = trackRef.current.querySelectorAll('.hero-image');
+          images = trackRef.current.querySelectorAll(".hero-image");
           imageElementsRef.current = images as NodeListOf<HTMLImageElement>;
         }
 
         if (images) {
-          const scrollProgress = Math.min(Math.max(verticalScroll.current / window.innerHeight, 0), 1);
+          const scrollProgress = Math.min(
+            Math.max(verticalScroll.current / window.innerHeight, 0),
+            1,
+          );
 
           // Scroll-driven Image Scale
           // Slightly increased base scale to ensure edges don't show during parallax
           // 1.12 -> 1.08
-          const scrollScaleInfo = 1.12 - (scrollProgress * 0.04);
+          const scrollScaleInfo = 1.12 - scrollProgress * 0.04;
           const scaleVal = Math.max(1.08, scrollScaleInfo);
 
-          // Vertical Parallax using transform 
+          // Vertical Parallax using transform
           // Capped at 25px to stay strictly within the top overflow buffer provided by scale (buffer > 28px at 700h)
           const parallaxY = scrollProgress * 25;
 
           images.forEach((img, index) => {
-            const slideX = (index * width) + finalX;
+            const slideX = index * width + finalX;
             const normalizedOffset = slideX / width;
 
             if (isMobile) {
@@ -262,7 +282,10 @@ const Hero = () => {
               // Desktop: Horizontal parallax + vertical parallax + scale
               img.style.transform = `translate3d(${-parallaxX}px, ${parallaxY}px, 0) scale(${scaleVal})`;
 
-              const positionX = Math.max(15, Math.min(85, 50 - (normalizedOffset * 25)));
+              const positionX = Math.max(
+                15,
+                Math.min(85, 50 - normalizedOffset * 25),
+              );
               img.style.objectPosition = `${positionX}% 50%`;
             }
           });
@@ -276,7 +299,8 @@ const Hero = () => {
   useEffect(() => {
     animationFrameId.current = requestAnimationFrame(animate);
     return () => {
-      if (animationFrameId.current) cancelAnimationFrame(animationFrameId.current);
+      if (animationFrameId.current)
+        cancelAnimationFrame(animationFrameId.current);
     };
   }, [animate]);
 
@@ -290,7 +314,9 @@ const Hero = () => {
         e.preventDefault();
         position.current.target -= e.deltaX * WHEEL_MULTIPLIER;
         if (wheelTimeout.current) clearTimeout(wheelTimeout.current);
-        wheelTimeout.current = setTimeout(() => { snapToNearestSlide(); }, 150);
+        wheelTimeout.current = setTimeout(() => {
+          snapToNearestSlide();
+        }, 150);
       }
     };
 
@@ -298,7 +324,7 @@ const Hero = () => {
       isDragging.current = true;
       startX.current = clientX;
       if (wheelTimeout.current) clearTimeout(wheelTimeout.current);
-      container.style.cursor = 'grabbing';
+      container.style.cursor = "grabbing";
     };
 
     const handleDragMove = (clientX: number) => {
@@ -311,16 +337,25 @@ const Hero = () => {
     const handleDragEnd = () => {
       isDragging.current = false;
       snapToNearestSlide();
-      container.style.cursor = 'grab';
+      container.style.cursor = "grab";
     };
 
-    const onTouchStart = (e: TouchEvent) => handleDragStart(e.touches[0].clientX);
+    const onTouchStart = (e: TouchEvent) =>
+      handleDragStart(e.touches[0].clientX);
     const onTouchMove = (e: TouchEvent) => handleDragMove(e.touches[0].clientX);
     const onTouchEnd = () => handleDragEnd();
-    const onMouseDown = (e: MouseEvent) => { e.preventDefault(); handleDragStart(e.clientX); };
-    const onMouseMove = (e: MouseEvent) => { e.preventDefault(); handleDragMove(e.clientX); };
+    const onMouseDown = (e: MouseEvent) => {
+      e.preventDefault();
+      handleDragStart(e.clientX);
+    };
+    const onMouseMove = (e: MouseEvent) => {
+      e.preventDefault();
+      handleDragMove(e.clientX);
+    };
     const onMouseUp = () => handleDragEnd();
-    const onMouseLeave = () => { if (isDragging.current) handleDragEnd(); };
+    const onMouseLeave = () => {
+      if (isDragging.current) handleDragEnd();
+    };
 
     container.addEventListener("wheel", handleWheel, { passive: false });
     container.addEventListener("touchstart", onTouchStart, { passive: true });
@@ -344,14 +379,15 @@ const Hero = () => {
   }, [snapToNearestSlide]);
 
   return (
-    <section className="relative w-full z-0" style={{ height: '200vh', marginBottom: '-100vh' }}>
-      <div
-        className="sticky top-0 h-screen w-full overflow-hidden"
-      >
+    <section
+      className="relative w-full z-0"
+      style={{ height: "200vh", marginBottom: "-100vh" }}
+    >
+      <div className="sticky top-0 h-screen w-full overflow-hidden">
         <div
           ref={heroWrapperRef}
           className="absolute inset-0 will-change-transform origin-center"
-          style={{ clipPath: 'inset(0% 0% 0% 0% round 0px)' }}
+          style={{ clipPath: "inset(0% 0% 0% 0% round 0px)" }}
         >
           <div
             ref={containerRef}
@@ -361,7 +397,7 @@ const Hero = () => {
               ref={trackRef}
               className="flex h-full will-change-transform"
               // Width = (Originals + 2) * 100vw
-              style={{ width: `${(IMAGES.length) * 100}vw` }}
+              style={{ width: `${IMAGES.length * 100}vw` }}
             >
               {IMAGES.map((src, idx) => {
                 return (
@@ -383,11 +419,15 @@ const Hero = () => {
                       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-transparent to-black/20 z-10 pointer-events-none" />
                     </div>
 
-                    <div className={`absolute top-28 left-0 w-full px-6 sm:px-12 md:px-24 text-left z-20 transition-opacity duration-1000 ${(idx === 0 && activeIndex === ORIG_IMAGES.length - 1) ||
-                      (idx === IMAGES.length - 1 && activeIndex === 0) ||
-                      (idx === activeIndex + 1)
-                      ? "opacity-100 delay-300" : "opacity-0"
-                      }`}>
+                    <div
+                      className={`absolute top-28 left-0 w-full px-6 sm:px-12 md:px-24 text-left z-20 transition-opacity duration-1000 ${
+                        (idx === 0 && activeIndex === ORIG_IMAGES.length - 1) ||
+                        (idx === IMAGES.length - 1 && activeIndex === 0) ||
+                        idx === activeIndex + 1
+                          ? "opacity-100 delay-300"
+                          : "opacity-0"
+                      }`}
+                    >
                       <div className="max-w-xl">
                         <h2 className="text-4xl md:text-5xl lg:text-7xl font-bold tracking-tight text-[#F2F2F2]">
                           {SLIDE_DATA[idx].title}
@@ -413,8 +453,12 @@ const Hero = () => {
                             variant="link"
                             className="px-0 text-[#F2F2F2] hover:text-white transition-all text-base h-12 decoration-transparent"
                             onClick={() => {
-                              const productsSection = document.getElementById('products');
-                              if (productsSection) productsSection.scrollIntoView({ behavior: 'smooth' });
+                              const productsSection =
+                                document.getElementById("products");
+                              if (productsSection)
+                                productsSection.scrollIntoView({
+                                  behavior: "smooth",
+                                });
                             }}
                           >
                             Explore Models &rarr;
@@ -424,10 +468,15 @@ const Hero = () => {
                     </div>
 
                     {/* Desktop Metric */}
-                    <div className={`hidden md:block absolute bottom-32 right-24 z-20 text-right transition-all duration-1000 ease-out ${(idx === 0 && activeIndex === ORIG_IMAGES.length - 1) ||
-                      (idx === IMAGES.length - 1 && activeIndex === 0) ||
-                      (idx === activeIndex + 1)
-                      ? "opacity-100 translate-y-0 delay-500" : "opacity-0 translate-y-8"}`}>
+                    <div
+                      className={`hidden md:block absolute bottom-32 right-24 z-20 text-right transition-all duration-1000 ease-out ${
+                        (idx === 0 && activeIndex === ORIG_IMAGES.length - 1) ||
+                        (idx === IMAGES.length - 1 && activeIndex === 0) ||
+                        idx === activeIndex + 1
+                          ? "opacity-100 translate-y-0 delay-500"
+                          : "opacity-0 translate-y-8"
+                      }`}
+                    >
                       <div className="flex flex-col items-end">
                         <span className="text-6xl font-normal tracking-tighter text-[#F2F2F2] tabular-nums leading-none">
                           {SLIDE_DATA[idx].metric.value}
@@ -439,11 +488,15 @@ const Hero = () => {
                     </div>
 
                     {/* Mobile Metric & CTA Combined */}
-                    <div className={`md:hidden absolute bottom-24 left-6 right-6 z-20 flex justify-between items-start transition-all duration-1000 ease-out ${(idx === 0 && activeIndex === ORIG_IMAGES.length - 1) ||
-                      (idx === IMAGES.length - 1 && activeIndex === 0) ||
-                      (idx === activeIndex + 1)
-                      ? "opacity-100 translate-y-0 delay-500" : "opacity-0 translate-y-8"}`}>
-
+                    <div
+                      className={`md:hidden absolute bottom-24 left-6 right-6 z-20 flex justify-between items-start transition-all duration-1000 ease-out ${
+                        (idx === 0 && activeIndex === ORIG_IMAGES.length - 1) ||
+                        (idx === IMAGES.length - 1 && activeIndex === 0) ||
+                        idx === activeIndex + 1
+                          ? "opacity-100 translate-y-0 delay-500"
+                          : "opacity-0 translate-y-8"
+                      }`}
+                    >
                       <Button
                         size="sm"
                         className="rounded-full h-10 px-6 text-sm bg-[#F2F2F2] text-black hover:bg-white transition-all font-semibold shadow-none border-none mt-1"
@@ -463,22 +516,40 @@ const Hero = () => {
                         <span className="text-sm font-medium tracking-[0.2em] text-[#F2F2F2]/60 uppercase mt-2">
                           {(() => {
                             const label = SLIDE_DATA[idx].metric.label;
-                            if (label === "Water & Dust Rating") return <>Water &<br />Dust Rating</>;
-                            if (label === "Battery Warranty") return <>Battery<br />Warranty</>;
+                            if (label === "Water & Dust Rating")
+                              return (
+                                <>
+                                  Water &<br />
+                                  Dust Rating
+                                </>
+                              );
+                            if (label === "Battery Warranty")
+                              return (
+                                <>
+                                  Battery
+                                  <br />
+                                  Warranty
+                                </>
+                              );
                             // Fallback for other long labels
                             if (label.length > 15) {
                               const parts = label.split(" ");
                               const last = parts.pop();
-                              return <>{parts.join(" ")}<br />{last}</>;
+                              return (
+                                <>
+                                  {parts.join(" ")}
+                                  <br />
+                                  {last}
+                                </>
+                              );
                             }
                             return label;
                           })()}
                         </span>
                       </div>
                     </div>
-
                   </div>
-                )
+                );
               })}
             </div>
 

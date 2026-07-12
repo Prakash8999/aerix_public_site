@@ -240,7 +240,7 @@ export default function ContactPage() {
                                         <Input
                                             id="phone"
                                             type="tel"
-                                            placeholder="+91 98765 43210"
+                                            placeholder="+91 7770000597"
                                             value={formData.phone}
                                             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                                             required

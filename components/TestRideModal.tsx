@@ -18,32 +18,38 @@ import { cn } from "@/lib/utils";
 const productData = [
   {
     id: "1",
-    name: "AERIX ENDURO",
-    colors: ["Red", "White", "Grey", "Peacock Blue", "Black"],
+    name: "Aerix Ninja Mini",
+    colors: ["Maroon", "Peacock Green", "Black", "Grey", "White"],
     images: {
-      Grey: "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_enduro_grey_large.png",
-      "Peacock Blue": "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_enduro_blue_large.png",
-      White: "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_enduro_white_large.png"
+      Maroon: "https://cdn.aerixenergy.com/images/90e25573-c465-4587-bef5-6274f295a589.png",
+      "Peacock Green": "https://cdn.aerixenergy.com/images/d01cc6f8-de6b-4e64-866f-ba77e18918a1.png",
+      Black: "https://cdn.aerixenergy.com/images/d994d8c6-accf-4516-a5c5-58b0f4fce382.png",
+      Grey: "https://cdn.aerixenergy.com/images/d1f60d39-f380-4aac-804e-e05ccf37f430.png",
+      White: "https://cdn.aerixenergy.com/images/72808d24-8ceb-4d35-bb6f-b0cda9c1a79e.png"
     },
   },
   {
     id: "2",
-    name: "AERIX GLIDE",
-    colors: ["Red", "White", "Grey", "Peacock Blue", "Black"],
+    name: "Aerix Sharvil",
+    colors: ["Black", "Grey", "White", "Maroon", "Purple"],
     images: {
-      Grey: "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_glide_grey_large.png",
-      "Peacock Blue": "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_glide_blue_large.png",
-      White: "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_glide_white_large.png"
+      Black: "https://cdn.aerixenergy.com/images/9aa2ad77-29e0-4d26-94ee-c3d2b7bed337.png",
+      Grey: "https://cdn.aerixenergy.com/images/bbb6698f-8055-4c29-b5c0-fa03575c3488.png",
+      White: "https://cdn.aerixenergy.com/images/a9be4b3b-a1fd-414f-b07c-0fc6c76920a8.png",
+      Maroon: "https://cdn.aerixenergy.com/images/ad99a205-a999-4c1e-bc13-78f3111a6196.png",
+      Purple: "https://cdn.aerixenergy.com/images/6a54a8af-dab4-4a5b-b352-6a301d75b919.png",
     },
   },
   {
     id: "3",
-    name: "AERIX PRIME",
+    name: "Aerix Wolf 2.0",
     colors: ["Orange", "White", "Grey", "Peacock Blue", "Black"],
     images: {
-      Orange: "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_prime_orange_large.png",
-      Grey: "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_prime_grey_large.png",
-      White: "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_prime_white_large.png"
+      White: "https://cdn.aerixenergy.com/images/695896c6-de4c-41d3-9383-b2b8939d1cff.png",
+      Grey: "https://cdn.aerixenergy.com/images/67c6bcbe-16c8-4a30-9db4-47a799c187ee.png",
+      Orange: "https://cdn.aerixenergy.com/images/61632aec-1c2d-45ad-8b22-a0bacdcdd6e6.png",
+      Cream: "https://cdn.aerixenergy.com/images/94fe2298-d8b3-4acb-987f-4455ac1dd297.png",
+      Black: "https://cdn.aerixenergy.com/images/366c7875-e0af-46aa-b9bb-03d266a6db98.png"
     },
   },
   {
@@ -53,45 +59,58 @@ const productData = [
     images: {
       Grey: "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_ranger_grey_large.png",
       White: "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_ranger_white_large.png",
-      Black: "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_range_black_large.png"
+      Black: "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_range_black_large.png",
     },
   },
   {
     id: "5",
-    name: "AERIX URBAN",
+    name: "Aerix GTR++",
     colors: ["Red", "White", "Grey", "Peacock Blue", "Black"],
     images: {
-      Grey: "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_urban_grey_large.png",
-      White: "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_urban_white_large.png"
+      "Peacock Green": "https://cdn.aerixenergy.com/images/73f1eb6a-f0dd-47bb-9a52-fcaba030dfca.png",
+      Black: "https://cdn.aerixenergy.com/images/0306c24c-5cd8-4e7b-a0d4-7cebe814a291.png",
+      White: "https://cdn.aerixenergy.com/images/ce88bcc3-74ea-4d38-80a7-4412efb58754.png",
+      Maroon: "https://cdn.aerixenergy.com/images/99ee50b0-679f-4467-b51d-c93f43b92032.png",
+      Grey: "https://cdn.aerixenergy.com/images/bfe5e84a-907d-4dd0-bda1-f8d0a5d5311d.png"
     },
   },
   {
     id: "6",
-    name: "AERIX TITAN",
-    colors: ["Red", "White", "Grey", "Metallic Gold", "Black"],
+    name: "Aerix Aurra Pro",
+    colors: ["Cream", "White", "Black", "Maroon"],
     images: {
-      White: "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_titan_white_large.png",
-      "Metallic Gold": "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_titan_gold_large.png"
+      Cream: "https://cdn.aerixenergy.com/images/6ab1dd25-fd5e-4f7f-8aca-3705358a5d0c.png",
+      White: "https://cdn.aerixenergy.com/images/b60a5a9a-4ab6-403d-9405-395f080a51fb.png",
+      Black: "https://cdn.aerixenergy.com/images/441d0c9d-304b-4b72-8cd2-7d3c47c49180.png",
+      Maroon: "https://cdn.aerixenergy.com/images/25ec10b9-23e0-458b-aca7-85d1909a1de0.png",
     },
   },
   {
     id: "7",
-    name: "AERIX VOLT",
-    colors: ["Black", "White", "Grey"],
+    name: "Aerix Loader",
+    colors: ["Black"],
     images: {
-      Black: "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_volt_black_large.png"
+      Black: "https://cdn.aerixenergy.com/images/0688cc74-8064-498a-b1f5-0f7e1ee85030.png",
     },
-  }
+  },
+  {
+    id: "8",
+    name: "Aerix Tumtum",
+    colors: ["Black"],
+    images: {
+      Black: "https://cdn.aerixenergy.com/images/f81a6704-ecf7-4629-9cc3-cdda5fff7242.png",
+    },
+  },
 ];
 
 const getColorHex = (color: string) => {
   const map: Record<string, string> = {
-    "Red": "#EF4444",
-    "White": "#F9FAFB",
-    "Grey": "#4B5563",
+    Red: "#EF4444",
+    White: "#F9FAFB",
+    Grey: "#4B5563",
     "Peacock Blue": "#06b6d4",
-    "Black": "#000000",
-    "Orange": "#F97316",
+    Black: "#000000",
+    Orange: "#F97316",
     "Metallic Gold": "#EAB308",
   };
   return map[color] || "#E5E5E5";
@@ -114,12 +133,21 @@ export default function TestRideModal({
 }: TestRideModalProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  const findMatchingProduct = (modelName: string) => {
+    if (!modelName) return productData[0].name;
+    const search = modelName.toLowerCase().replace(/^aerix\s+/i, "").trim();
+    const match = productData.find(
+      (p) => p.name.toLowerCase().replace(/^aerix\s+/i, "").trim() === search
+    );
+    return match ? match.name : productData[0].name;
+  };
+
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
     email: "",
-    product: preSelectedModel,
-    color: preSelectedColor,
+    product: findMatchingProduct(preSelectedModel),
+    color: preSelectedColor || productData[0].colors[0],
     pincode: "",
     whatsappUpdates: false,
     honeypot: "",
@@ -128,21 +156,24 @@ export default function TestRideModal({
   const [displayImage, setDisplayImage] = useState<string>("");
 
   useEffect(() => {
-    if (preSelectedModel) {
-      setFormData((prev) => ({
-        ...prev,
-        product: preSelectedModel,
-        color: preSelectedColor || prev.color
-      }));
-    }
+    setFormData((prev) => ({
+      ...prev,
+      product: findMatchingProduct(preSelectedModel),
+      color: preSelectedColor || prev.color || productData[0].colors[0],
+    }));
   }, [preSelectedModel, preSelectedColor]);
 
   // Update display image and color when product changes
   useEffect(() => {
-    const selectedProduct = productData.find(p => p.name === formData.product);
+    const selectedProduct = productData.find(
+      (p) => p.name === formData.product,
+    );
     if (selectedProduct) {
       // Check if current color is valid for this product
-      const currentColorImage = selectedProduct.images[formData.color as keyof typeof selectedProduct.images];
+      const currentColorImage =
+        selectedProduct.images[
+          formData.color as keyof typeof selectedProduct.images
+        ];
 
       if (currentColorImage) {
         setDisplayImage(currentColorImage);
@@ -150,16 +181,20 @@ export default function TestRideModal({
         // Pick the first available image if current color invalid
         const firstImageKey = Object.keys(selectedProduct.images)[0];
         if (firstImageKey) {
-          setDisplayImage(selectedProduct.images[firstImageKey as keyof typeof selectedProduct.images]);
-          setFormData(prev => ({ ...prev, color: firstImageKey }));
+          setDisplayImage(
+            selectedProduct.images[
+              firstImageKey as keyof typeof selectedProduct.images
+            ],
+          );
+          setFormData((prev) => ({ ...prev, color: firstImageKey }));
         } else {
           setDisplayImage("");
-          setFormData(prev => ({ ...prev, color: "" }));
+          setFormData((prev) => ({ ...prev, color: "" }));
         }
       }
     } else {
       setDisplayImage("");
-      setFormData(prev => ({ ...prev, color: "" }));
+      setFormData((prev) => ({ ...prev, color: "" }));
     }
   }, [formData.product]);
 
@@ -238,11 +273,14 @@ export default function TestRideModal({
         honeypot: formData.honeypot,
       };
 
-      const res = await fetch(`${process.env.NEXT_PUBLIC_EMAIL_API}/api/email/send`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_EMAIL_API}/api/email/send`,
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        },
+      );
 
       const data = await res.json();
 
@@ -254,7 +292,7 @@ export default function TestRideModal({
       toast.success(
         isEnquiry
           ? "Thank you! Our team will contact you soon."
-          : "Your test ride request has been submitted!"
+          : "Your test ride request has been submitted!",
       );
       localStorage.setItem("aerixenergy-interest-submitted", "true");
       onOpenChange(false);
@@ -277,12 +315,11 @@ export default function TestRideModal({
 
   if (!open) return null;
 
-  const currentProduct = productData.find(p => p.name === formData.product);
+  const currentProduct = productData.find((p) => p.name === formData.product);
 
   return createPortal(
     <div className="fixed inset-0 z-[99999] flex items-center justify-center p-4 sm:p-6 bg-black/60 backdrop-blur-sm animate-in fade-in duration-300">
       <div className="bg-white rounded-[40px] w-full max-w-5xl max-h-[90vh] overflow-hidden shadow-2xl flex flex-col md:flex-row animate-in zoom-in-95 duration-300">
-
         {/* Left Side - Form */}
         <div className="w-full md:w-1/2 flex flex-col h-full bg-white">
           <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
@@ -291,7 +328,9 @@ export default function TestRideModal({
                 {isEnquiry ? "Enquire Now" : "Book Test Ride"}
               </h2>
               <p className="text-sm text-gray-500 mt-1">
-                {isEnquiry ? "Get in touch with our team" : "Experience it before you buy it"}
+                {isEnquiry
+                  ? "Get in touch with our team"
+                  : "Experience it before you buy it"}
               </p>
             </div>
             <button
@@ -332,10 +371,12 @@ export default function TestRideModal({
                 <div className="space-y-2">
                   <Label className="text-gray-700">Phone Number</Label>
                   <div className="relative">
-                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm font-medium">+91</span>
+                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 text-sm font-medium">
+                      +91
+                    </span>
                     <Input
                       type="tel"
-                      placeholder="98765 43210"
+                      placeholder="7770000597"
                       value={formData.phone}
                       onChange={(e) =>
                         setFormData({ ...formData, phone: e.target.value })
@@ -366,7 +407,9 @@ export default function TestRideModal({
                   <Label className="text-gray-700">Vehicle Model</Label>
                   <Select
                     value={formData.product}
-                    onValueChange={(v) => setFormData({ ...formData, product: v })}
+                    onValueChange={(v) =>
+                      setFormData({ ...formData, product: v })
+                    }
                     required
                   >
                     <SelectTrigger className="bg-gray-50 border-gray-200 focus:bg-white h-11">
@@ -410,9 +453,7 @@ export default function TestRideModal({
                       Submitting Request...
                     </>
                   ) : (
-                    <>
-                      {isEnquiry ? "Submit Enquiry" : "Confirm Test Ride"}
-                    </>
+                    <>{isEnquiry ? "Submit Enquiry" : "Confirm Test Ride"}</>
                   )}
                 </Button>
                 <p className="text-xs text-center text-gray-400 mt-4">
@@ -442,24 +483,37 @@ export default function TestRideModal({
               </div>
             ) : (
               <div className="w-full h-64 flex items-center justify-center text-neutral-400 border-2 border-dashed border-neutral-300 rounded-xl">
-                <span className="text-lg font-medium">Select a model to view</span>
+                <span className="text-lg font-medium">
+                  Select a model to view
+                </span>
               </div>
             )}
 
             {currentProduct && (
               <div className="mt-8">
-                <p className="text-sm font-semibold text-neutral-500 mb-3 text-center uppercase tracking-wider">Available Colors</p>
+                <p className="text-sm font-semibold text-neutral-500 mb-3 text-center uppercase tracking-wider">
+                  Available Colors
+                </p>
                 <div className="flex flex-wrap justify-center gap-3">
                   {[...currentProduct.colors]
                     .sort((a, b) => {
-                      const hasA = !!currentProduct.images[a as keyof typeof currentProduct.images];
-                      const hasB = !!currentProduct.images[b as keyof typeof currentProduct.images];
+                      const hasA =
+                        !!currentProduct.images[
+                          a as keyof typeof currentProduct.images
+                        ];
+                      const hasB =
+                        !!currentProduct.images[
+                          b as keyof typeof currentProduct.images
+                        ];
                       if (hasA && !hasB) return -1;
                       if (!hasA && hasB) return 1;
                       return 0;
                     })
                     .map((color) => {
-                      const imageUrl = currentProduct.images[color as keyof typeof currentProduct.images];
+                      const imageUrl =
+                        currentProduct.images[
+                          color as keyof typeof currentProduct.images
+                        ];
                       const isSelected = formData.color === color;
 
                       return (
@@ -467,25 +521,44 @@ export default function TestRideModal({
                           <div
                             className={cn(
                               "w-8 h-8 rounded-full shadow-sm border border-black/10 cursor-pointer transition-all duration-300 hover:scale-110 flex items-center justify-center",
-                              isSelected ? "ring-2 ring-primary ring-offset-2 scale-110" : "hover:ring-2 hover:ring-primary/50",
-                              imageUrl ? "opacity-100" : "opacity-40 cursor-not-allowed"
+                              isSelected
+                                ? "ring-2 ring-primary ring-offset-2 scale-110"
+                                : "hover:ring-2 hover:ring-primary/50",
+                              imageUrl
+                                ? "opacity-100"
+                                : "opacity-40 cursor-not-allowed",
                             )}
                             style={{ backgroundColor: getColorHex(color) }}
                             onClick={() => {
                               if (imageUrl) {
                                 setDisplayImage(imageUrl);
-                                setFormData(prev => ({ ...prev, color }));
+                                setFormData((prev) => ({ ...prev, color }));
                               }
                             }}
                             title={color}
                           >
-                            {isSelected && <Check className={cn("w-4 h-4", ["White", "Yellow", "Gold", "Metallic Gold", "Orange"].includes(color) ? "text-black" : "text-white")} />}
+                            {isSelected && (
+                              <Check
+                                className={cn(
+                                  "w-4 h-4",
+                                  [
+                                    "White",
+                                    "Yellow",
+                                    "Gold",
+                                    "Metallic Gold",
+                                    "Orange",
+                                  ].includes(color)
+                                    ? "text-black"
+                                    : "text-white",
+                                )}
+                              />
+                            )}
                           </div>
                           <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 bg-black text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
                             {color}
                           </span>
                         </div>
-                      )
+                      );
                     })}
                 </div>
               </div>
@@ -493,13 +566,16 @@ export default function TestRideModal({
           </div>
 
           <div className="absolute bottom-6 left-6 z-10">
-            <h3 className="text-2xl font-bold text-neutral-900">{currentProduct ? currentProduct.name : "Choose Your Ride"}</h3>
-            <p className="text-neutral-500 text-sm mt-1">Experience the future of mobility</p>
+            <h3 className="text-2xl font-bold text-neutral-900">
+              {currentProduct ? currentProduct.name : "Choose Your Ride"}
+            </h3>
+            <p className="text-neutral-500 text-sm mt-1">
+              Experience the future of mobility
+            </p>
           </div>
         </div>
-
       </div>
     </div>,
-    document.body
+    document.body,
   );
 }

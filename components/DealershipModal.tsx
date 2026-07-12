@@ -242,7 +242,7 @@ const DealershipModal = ({ isOpen, onClose }: DealershipModalProps) => {
               <Label>Phone Number</Label>
               <Input
                 type="tel"
-                placeholder="e.g., +91 98765 43210"
+                placeholder="e.g., +91 7770000597"
                 value={formData.phone}
                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                 required

@@ -61,6 +61,7 @@ NEXT_PUBLIC_EMAIL_API=your_email_api_endpoint
 ## 🎨 Design System
 
 The website uses a custom design system with:
+
 - **Electric Blue** primary color (HSL: 192 100% 45%)
 - **Lime Green** secondary color (HSL: 82 100% 40%)
 - Glassmorphism effects
@@ -89,13 +90,14 @@ The development server runs on `http://localhost:4001` by default.
 ## 🚗 Products
 
 The website showcases the following electric scooters:
-1. AERIX ENDURO
-2. AERIX GLIDE
-3. AERIX PRIME
+
+1. Aerix Ninja Mini
+2. Aerix Sharvil
+3. Aerix Wolf 2.0
 4. AERIX RANGER
-5. AERIX URBAN
-6. AERIX TITAN
-7. AERIX VOLT
+5. Aerix GTR++
+6. Aerix Aurra Pro
+7. Aerix Loader
 
 ## 📄 License
 

@@ -14,21 +14,21 @@ const ServiceCentersModal = ({ isOpen, onClose }: ServiceCentersModalProps) => {
     {
       name: "Aerix Energy Service Center - Mumbai",
       address: "Office Number 205, Regency Plaza,Shanti Nagar, Nr Waldhuni Bridge,Ulhasnagar Mumbai 421004",
-      phone: "+91 98765 43210",
+      phone: "+91 7770000597",
       hours: "Mon-Sat: 9:00 AM - 7:00 PM"
     },
-    {
-      name: "Aerix Energy Service Center - Delhi",
-      address: "456 Electric Avenue, Connaught Place, New Delhi - 110001",
-      phone: "+91 98765 43211",
-      hours: "Mon-Sat: 9:00 AM - 7:00 PM"
-    },
-    {
-      name: "Aerix Energy Service Center - Bangalore",
-      address: "789 Battery Street, Koramangala, Bangalore - 560034",
-      phone: "+91 98765 43212",
-      hours: "Mon-Sat: 9:00 AM - 7:00 PM"
-    }
+    // {
+    //   name: "Aerix Energy Service Center - Delhi",
+    //   address: "456 Electric Avenue, Connaught Place, New Delhi - 110001",
+    //   phone: "+91 98765 43211",
+    //   hours: "Mon-Sat: 9:00 AM - 7:00 PM"
+    // },
+    // {
+    //   name: "Aerix Energy Service Center - Bangalore",
+    //   address: "789 Battery Street, Koramangala, Bangalore - 560034",
+    //   phone: "+91 98765 43212",
+    //   hours: "Mon-Sat: 9:00 AM - 7:00 PM"
+    // }
   ];
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {

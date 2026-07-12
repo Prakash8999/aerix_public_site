@@ -15,26 +15,45 @@ const Footer = () => {
   const [warrantyModalOpen, setWarrantyModalOpen] = useState(false);
   const router = useRouter();
 
-
   const footerSections = [
     {
       title: "Products",
       links: [
-        { label: "Aerix Enduro", action: () => router.push("/product/1") },
-        { label: "Aerix Glide", action: () => router.push("/product/2") },
-        { label: "Aerix Prime", action: () => router.push("/product/3") },
+        { label: "Aerix Ninja Mini", action: () => router.push("/product/1") },
+        { label: "Aerix Sharvil", action: () => router.push("/product/2") },
+        { label: "Aerix Wolf 2.0", action: () => router.push("/product/3") },
         { label: "Aerix Ranger", action: () => router.push("/product/4") },
-        { label: "Aerix Urban", action: () => router.push("/product/5") },
+        { label: "Aerix GTR++", action: () => router.push("/product/5") },
       ],
     },
     {
       title: "Support",
       links: [
-        { label: "Apply For Dealership", href: "#", action: () => setDealershipModalOpen(true) },
-        { label: "Book Test Ride", href: "#", action: () => setTestRideModalOpen(true) },
-        { label: "Service Centers", href: "#", action: () => setServiceCentersModalOpen(true) },
-        { label: "Contact Us", href: "#", action: () => setContactUsModalOpen(true) },
-        { label: "Warranty", href: "#", action: () => setWarrantyModalOpen(true) },
+        {
+          label: "Apply For Dealership",
+          href: "#",
+          action: () => setDealershipModalOpen(true),
+        },
+        {
+          label: "Book Test Ride",
+          href: "#",
+          action: () => setTestRideModalOpen(true),
+        },
+        {
+          label: "Service Centers",
+          href: "#",
+          action: () => setServiceCentersModalOpen(true),
+        },
+        {
+          label: "Contact Us",
+          href: "#",
+          action: () => setContactUsModalOpen(true),
+        },
+        {
+          label: "Warranty",
+          href: "#",
+          action: () => setWarrantyModalOpen(true),
+        },
       ],
     },
     // {
@@ -79,7 +98,8 @@ const Footer = () => {
               A unit of Finactics Consultants Pvt Ltd
             </p>
             <p className="text-sm text-muted-foreground mb-6">
-              Office Number 205, Regency Plaza,Shanti Nagar, Nr Waldhuni Bridge,Ulhasnagar Mumbai 421004
+              Office Number 205, Regency Plaza,Shanti Nagar, Nr Waldhuni
+              Bridge,Ulhasnagar Mumbai 421004
             </p>
             {/* <div className="flex gap-4">
               {socialLinks.map((social) => {
@@ -101,7 +121,9 @@ const Footer = () => {
           {/* Link Columns */}
           {footerSections.map((section) => (
             <div key={section.title}>
-              <h3 className="font-semibold text-foreground mb-4">{section.title}</h3>
+              <h3 className="font-semibold text-foreground mb-4">
+                {section.title}
+              </h3>
               <ul className="space-y-3">
                 {section.links.map((link) => (
                   <li key={link.label}>
@@ -130,7 +152,9 @@ const Footer = () => {
             © {new Date().getFullYear()} Aerix Energy. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
-            <span className="text-xs text-muted-foreground">Accepted Payments:</span>
+            <span className="text-xs text-muted-foreground">
+              Accepted Payments:
+            </span>
             <div className="flex gap-2">
               {["Visa", "Mastercard", "UPI", "Paytm"].map((payment) => (
                 <div
@@ -145,11 +169,27 @@ const Footer = () => {
         </div>
       </div>
 
-      <DealershipModal isOpen={dealershipModalOpen} onClose={() => setDealershipModalOpen(false)} />
-      <TestRideModal open={testRideModalOpen} onOpenChange={setTestRideModalOpen} isEnquiry={true} />
-      <ServiceCentersModal isOpen={serviceCentersModalOpen} onClose={() => setServiceCentersModalOpen(false)} />
-      <ContactUsModal isOpen={contactUsModalOpen} onClose={() => setContactUsModalOpen(false)} />
-      <WarrantyModal isOpen={warrantyModalOpen} onClose={() => setWarrantyModalOpen(false)} />
+      <DealershipModal
+        isOpen={dealershipModalOpen}
+        onClose={() => setDealershipModalOpen(false)}
+      />
+      <TestRideModal
+        open={testRideModalOpen}
+        onOpenChange={setTestRideModalOpen}
+        isEnquiry={true}
+      />
+      <ServiceCentersModal
+        isOpen={serviceCentersModalOpen}
+        onClose={() => setServiceCentersModalOpen(false)}
+      />
+      <ContactUsModal
+        isOpen={contactUsModalOpen}
+        onClose={() => setContactUsModalOpen(false)}
+      />
+      <WarrantyModal
+        isOpen={warrantyModalOpen}
+        onClose={() => setWarrantyModalOpen(false)}
+      />
     </footer>
   );
 };
