@@ -1,8 +1,13 @@
 {
+  "$schema": "node_modules/wrangler/config-schema.json",
   "name": "aerix-public-site",
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-07-12",
   "assets": {
-    "directory": ".open-next/assets"
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
   }
 }
