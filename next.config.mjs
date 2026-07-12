@@ -21,6 +21,15 @@ const nextConfig = {
     },
     // Only look for pages in the app directory
     pageExtensions: ['tsx', 'ts', 'jsx', 'js'].map(ext => `app.${ext}`).concat(['tsx', 'ts', 'jsx', 'js']),
+    async redirects() {
+        return [
+            {
+                source: '/home',
+                destination: '/',
+                permanent: true,
+            },
+        ];
+    },
 };
 
 export default nextConfig;

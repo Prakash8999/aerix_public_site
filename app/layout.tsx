@@ -12,13 +12,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: "Aerix Energy - Electric Vehicle Solutions",
-    description: "Leading provider of electric vehicle charging solutions and sustainable energy products",
-    keywords: ["electric vehicles", "EV charging", "sustainable energy", "Aerix"],
+    title: "Aerix Energy - Premium Electric Vehicles",
+    description: "Discover Aerix Energy, your premier choice for EV mobility. We offer high-performance electric scooters and innovative battery swapping technology.",
+    keywords: ["electric scooters", "EV mobility", "battery swapping", "Aerix Energy", "electric vehicles"],
     authors: [{ name: "Aerix Energy" }],
     openGraph: {
-        title: "Aerix Energy - Electric Vehicle Solutions",
-        description: "Leading provider of electric vehicle charging solutions and sustainable energy products",
+        title: "Aerix Energy - Premium Electric Vehicles",
+        description: "Discover Aerix Energy, your premier choice for EV mobility. We offer high-performance electric scooters and innovative battery swapping technology.",
         type: "website",
     },
 };
