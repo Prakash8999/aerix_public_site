@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram, Youtube, Linkedin } from "lucide-react";
+import { Facebook, Twitter, Instagram, Youtube, Linkedin, Phone } from "lucide-react";
 import { useState } from "react";
 import DealershipModal from "./DealershipModal";
 import TestRideModal from "./TestRideModal";
@@ -101,6 +101,10 @@ const Footer = () => {
               Office Number 205, Regency Plaza,Shanti Nagar, Nr Waldhuni
               Bridge,Ulhasnagar Mumbai 421004
             </p>
+            <div className="flex gap-2">
+                  <Phone className="w-4 h-4" />
+                  <span>7770000597</span>
+                </div>
             {/* <div className="flex gap-4">
               {socialLinks.map((social) => {
                 const Icon = social.icon;
