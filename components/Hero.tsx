@@ -11,7 +11,7 @@ const ORIG_IMAGES = [
   "https://cdn.aerixenergy.com/images/6ab1dd25-fd5e-4f7f-8aca-3705358a5d0c.png", // 0
   "https://cdn.aerixenergy.com/images/99ee50b0-679f-4467-b51d-c93f43b92032.png", // 3
   "https://cdn.aerixenergy.com/images/f81a6704-ecf7-4629-9cc3-cdda5fff7242.png", // 2
-  "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_range_black_large.png", // 4
+  "https://cdn.aerixenergy.com/images/images_aerix_range_black_large%20(1).png", // 4
 ];
 
 const MOBILE_IMAGE_MAP: Record<string, string> = {
@@ -26,7 +26,7 @@ const MOBILE_IMAGE_MAP: Record<string, string> = {
   "f81a6704-ecf7-4629-9cc3-cdda5fff7242.png":
     "https://cdn.aerixenergy.com/images/loader_3wheeler.png",
   "aerix_range_black_large.png":
-    "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_range_black_large.png",
+    "https://cdn.aerixenergy.com/images/images_aerix_ranger_black_small.png",
 };
 
 const getMobileSrc = (desktopSrc: string) => {
