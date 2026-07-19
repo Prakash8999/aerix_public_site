@@ -11,20 +11,70 @@ import {
 import { useState, useEffect } from "react";
 
 const cities = [
-  "Mumbai",
-  "Bangalore",
-  "Chennai",
-  "Delhi NCR",
-  "Hyderabad",
-  "Kolkata",
-  "Pune",
-  "Patna",
-  "Jaipur",
+  "Ulhasnagar",
+  "Ambernath",
+  "Kalyan East",
+  "Mumbra",
+  "Airoli"
 ];
+
+type StoreInfo = {
+  shopName: string;
+  address: React.ReactNode;
+  phone?: string;
+};
+
+const storeData: Record<string, StoreInfo> = {
+  Ulhasnagar: {
+    shopName: "Aerix",
+    address: (
+      <>
+        Shop No 545, Main Road, O.T Section,<br />
+        OPP Geeta Medical,<br />
+        Ulhasnagar, Maharashtra 421004
+      </>
+    ),
+    phone: "+91 7770000597",
+  },
+  Ambernath: {
+    shopName: "OM SAI AERIX",
+    address: (
+      <>
+        Shop No. 7, Gauri Shankar Complex, Shiv Mandir Road,<br />
+        Near IndusInd Bank, Ambernath East,<br />
+        Maharashtra 421501
+      </>
+    ),
+    phone: "+91 7559199923",
+  },
+  "Kalyan East": {
+    shopName: "Rj Enterprises",
+    address: (
+      <>
+        SANJIT KUMAR JHA, 1696, TOLANI BHAVAN,<br />
+        MAHAVEER HOSPITAL RD, Kalyan East,<br />
+        Maharashtra 421004
+      </>
+    ),
+    phone: "+91 9373407231",
+  },
+  Mumbra: {
+    shopName: "AKSHIT ENTERPRISES",
+    address: (
+      <>
+        A-14 ELITE RESIDENCY, MAULANA AZAD RD,<br />
+        NEAR CENTRAL HEIGHTS, Mittal Ground,<br />
+        Mumbra, Maharashtra 400612
+      </>
+    ),
+    phone: "+91 9930429595",
+  },
+};
 
 const CitySelector = () => {
   const { toast } = useToast();
   const [showAddressModal, setShowAddressModal] = useState(false);
+  const [selectedCity, setSelectedCity] = useState<string | null>(null);
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -48,7 +98,8 @@ const CitySelector = () => {
   }, []);
 
   const handleCityClick = (city: string) => {
-    if (city === "Mumbai") {
+    if (storeData[city]) {
+      setSelectedCity(city);
       setShowAddressModal(true);
       return;
     }
@@ -58,6 +109,8 @@ const CitySelector = () => {
       description: `We're excited to announce that our AERIX ENERGY store in ${city} will be opening soon! Stay tuned for updates on our launch date and exclusive opening offers.`,
     });
   };
+
+  const activeStore = selectedCity ? storeData[selectedCity] : null;
 
   return (
     <section className="">
@@ -73,9 +126,6 @@ const CitySelector = () => {
           </h2>
           <p className="text-xl md:text-2xl font-semibold mb-2">
             Select City <span className="gradient-text">AERIX ENERGY</span> Stores.
-          </p>
-          <p className="text-base text-muted-foreground">
-            Because nothing beats a one on one with the S1.
           </p>
         </motion.div>
 
@@ -107,53 +157,57 @@ const CitySelector = () => {
 
         <Dialog open={showAddressModal} onOpenChange={setShowAddressModal}>
           <DialogContent className="sm:max-w-md border-primary/20 bg-background/95 backdrop-blur-xl">
-            <DialogHeader>
-              <DialogTitle className="text-2xl font-bold flex items-center gap-2">
-                <div className="p-2 rounded-full bg-primary/10">
-                  <MapPin className="text-primary w-5 h-5" />
-                </div>
-                <span>Mumbai Store</span>
-              </DialogTitle>
-              <DialogDescription className="text-base">
-                Experience the future of riding at our Ulhasnagar center
-              </DialogDescription>
-            </DialogHeader>
-            <div className="space-y-6 py-4">
-              <div className="relative overflow-hidden rounded-xl border border-primary/10 bg-secondary/5 p-6 hover:bg-secondary/10 transition-colors">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="p-2 rounded-lg bg-primary/5 shrink-0">
-                    <MapPin className="w-5 h-5 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-lg mb-1">Ulhasnagar Experience Center</h4>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Shop No 545, Main Road, O.T Section,<br />
-                      OPP Geeta Medical,<br />
-                      Ulhasnagar, Maharashtra 421004
-                    </p>
-                  </div>
-                </div>
+            {activeStore && (
+              <>
+                <DialogHeader>
+                  <DialogTitle className="text-2xl font-bold flex items-center gap-2">
+                    <div className="p-2 rounded-full bg-primary/10">
+                      <MapPin className="text-primary w-5 h-5" />
+                    </div>
+                    <span>{selectedCity} Store</span>
+                  </DialogTitle>
+                  <DialogDescription className="text-base">
+                    Experience the future of riding at our {selectedCity} center
+                  </DialogDescription>
+                </DialogHeader>
+                <div className="space-y-6 py-4">
+                  <div className="relative overflow-hidden rounded-xl border border-primary/10 bg-secondary/5 p-6 hover:bg-secondary/10 transition-colors">
+                    <div className="flex items-start gap-4 mb-6">
+                      <div className="p-2 rounded-lg bg-primary/5 shrink-0">
+                        <MapPin className="w-5 h-5 text-primary" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold text-lg mb-1">Shop Name: {activeStore.shopName}</h4>
+                        <p className="text-muted-foreground leading-relaxed">
+                          {activeStore.address}
+                        </p>
+                      </div>
+                    </div>
 
-                <div className="grid grid-cols-2 gap-4 mb-6">
-                  <div className="flex items-center gap-3 p-3 rounded-lg bg-background/50 border border-border/50">
-                    <Phone className="w-4 h-4 text-primary" />
-                    <span className="text-sm font-medium">+91 7770000597</span>
+                    <div className="grid grid-cols-2 gap-4 mb-6">
+                      {activeStore.phone && (
+                        <div className="flex items-center gap-3 p-3 rounded-lg bg-background/50 border border-border/50">
+                          <Phone className="w-4 h-4 text-primary" />
+                          <span className="text-sm font-medium">{activeStore.phone}</span>
+                        </div>
+                      )}
+                      <div className={`flex items-center gap-3 p-3 rounded-lg bg-background/50 border border-border/50 ${!activeStore.phone ? 'col-span-2' : ''}`}>
+                        <Clock className="w-4 h-4 text-primary" />
+                        <span className="text-sm font-medium">11:00 AM - 11:00 PM</span>
+                      </div>
+                    </div>
                   </div>
-                  <div className="flex items-center gap-3 p-3 rounded-lg bg-background/50 border border-border/50">
-                    <Clock className="w-4 h-4 text-primary" />
-                    <span className="text-sm font-medium">11:00 AM - 11:00 PM</span>
-                  </div>
-                </div>
-              </div>
 
-              <div className="flex items-center justify-between px-2 text-sm text-muted-foreground">
-                <div className="flex items-center gap-2">
-                  <div className={`w-2 h-2 rounded-full animate-pulse ${isOpen ? "bg-green-500" : "bg-red-500"}`} />
-                  <span>{isOpen ? "Open Now" : "Closed"}</span>
+                  <div className="flex items-center justify-between px-2 text-sm text-muted-foreground">
+                    <div className="flex items-center gap-2">
+                      <div className={`w-2 h-2 rounded-full animate-pulse ${isOpen ? "bg-green-500" : "bg-red-500"}`} />
+                      <span>{isOpen ? "Open Now" : "Closed"}</span>
+                    </div>
+                    <span>Mon - Sun</span>
+                  </div>
                 </div>
-                <span>Mon - Sun</span>
-              </div>
-            </div>
+              </>
+            )}
           </DialogContent>
         </Dialog>
       </div>

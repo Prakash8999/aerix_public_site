@@ -16,15 +16,15 @@ const ORIG_IMAGES = [
 
 const MOBILE_IMAGE_MAP: Record<string, string> = {
   "aerix_prime_orange_large.png":
-    "https://cdn.aerixenergy.com/images/695896c6-de4c-41d3-9383-b2b8939d1cff.png",
+    "https://cdn.aerixenergy.com/images/ChatGPT%20Image%20Jul%2019%2C%202026%2C%2003_24_05%20PM.png",
   "aerix_glide_blue_large.png":
-    "https://cdn.aerixenergy.com/images/ad99a205-a999-4c1e-bc13-78f3111a6196.png",
+    "https://cdn.aerixenergy.com/images/ChatGPT%20Image%20Jul%2019%2C%202026%2C%2003_34_46%20PM.png",
   "aerix_titan_white_large.png":
-    "https://cdn.aerixenergy.com/images/6ab1dd25-fd5e-4f7f-8aca-3705358a5d0c.png",
+    "https://cdn.aerixenergy.com/images/ChatGPT%20Image%20Jul%2019%2C%202026%2C%2003_39_41%20PM.png",
   "aerix_volt_black_large.png":
-    "https://cdn.aerixenergy.com/images/99ee50b0-679f-4467-b51d-c93f43b92032.png",
+    "https://cdn.aerixenergy.com/images/ChatGPT%20Image%20Jul%2019%2C%202026%2C%2003_43_51%20PM.png",
   "aerix_urban_grey_large.png":
-    "https://cdn.aerixenergy.com/images/f81a6704-ecf7-4629-9cc3-cdda5fff7242.png",
+    "https://cdn.aerixenergy.com/images/loader_3wheeler.png",
   "aerix_range_black_large.png":
     "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_range_black_large.png",
 };
