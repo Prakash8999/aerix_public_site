@@ -15,15 +15,15 @@ const ORIG_IMAGES = [
 ];
 
 const MOBILE_IMAGE_MAP: Record<string, string> = {
-  "aerix_prime_orange_large.png":
+  "695896c6-de4c-41d3-9383-b2b8939d1cff.png":
     "https://cdn.aerixenergy.com/images/ChatGPT%20Image%20Jul%2019%2C%202026%2C%2003_24_05%20PM.png",
-  "aerix_glide_blue_large.png":
+  "ad99a205-a999-4c1e-bc13-78f3111a6196.png":
     "https://cdn.aerixenergy.com/images/ChatGPT%20Image%20Jul%2019%2C%202026%2C%2003_34_46%20PM.png",
-  "aerix_titan_white_large.png":
+  "6ab1dd25-fd5e-4f7f-8aca-3705358a5d0c.png":
     "https://cdn.aerixenergy.com/images/ChatGPT%20Image%20Jul%2019%2C%202026%2C%2003_39_41%20PM.png",
-  "aerix_volt_black_large.png":
+  "99ee50b0-679f-4467-b51d-c93f43b92032.png":
     "https://cdn.aerixenergy.com/images/ChatGPT%20Image%20Jul%2019%2C%202026%2C%2003_43_51%20PM.png",
-  "aerix_urban_grey_large.png":
+  "f81a6704-ecf7-4629-9cc3-cdda5fff7242.png":
     "https://cdn.aerixenergy.com/images/loader_3wheeler.png",
   "aerix_range_black_large.png":
     "https://pub-81175f420062419ca38eb19499a88ee5.r2.dev/images/aerix_range_black_large.png",
@@ -272,10 +272,9 @@ const Hero = () => {
             const normalizedOffset = slideX / width;
 
             if (isMobile) {
-              const cropShift = normalizedOffset * 35;
-              // Mobile: Combine horizontal crop shift + scale + vertical parallax
-              // Slightly higher scale for mobile crop safety
-              img.style.transform = `translateX(${-cropShift}%) translateY(${parallaxY}px) scale(${scaleVal + 0.05})`;
+              const parallaxX = slideX * 0.15;
+              // Mobile: Images are optimized for mobile, so we use standard parallax
+              img.style.transform = `translate3d(${-parallaxX}px, ${parallaxY}px, 0) scale(${scaleVal})`;
               img.style.objectPosition = `50% 50%`;
             } else {
               const parallaxX = slideX * 0.25;
